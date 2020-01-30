@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc3d4310-7b35-4951-96b3-68e0a9d0600a" name="Default Changelist" comment="" />
+    <list default="true" id="dc3d4310-7b35-4951-96b3-68e0a9d0600a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,6 +14,9 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1X6IAvdYBcZbBHdNqyycVvbcLOC" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -26,7 +32,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RunManager">
@@ -49,6 +61,7 @@
       <option name="presentableId" value="Default" />
       <updated>1580359977313</updated>
       <workItem from="1580359980675" duration="76000" />
+      <workItem from="1580370717288" duration="1837000" />
     </task>
     <servers />
   </component>
@@ -88,9 +101,13 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1366" height="220" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1580360056075" />
-    <state x="221" y="100" key="SettingsEditor" timestamp="1580360010183">
+    <state x="221" y="100" key="SettingsEditor" timestamp="1580371661321">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="221" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1580360010183" />
+    <state x="221" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1580371661321" />
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1580371693172">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1580371693172" />
   </component>
 </project>
