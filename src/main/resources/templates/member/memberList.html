@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: header" />
+<body>
+<div class="container">
+    <div th:replace="fragments/bodyHeader :: bodyHeader" />
+    <div>
+        <table class="table table-striped"> <thead>
+        <tr>
+            <th>닉네임</th> <th>도시</th> <th>도로명</th>
+        </tr>
+        </thead>
+            <tbody>
+            <tr th:each="member : ${members}">
+                <td th:text="${member.nickName}"></td>
+                <td th:text="${member.address?.city}"></td>
+                <td th:text="${member.address?.street}"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div th:replace="fragments/footer :: footer" />
+</div> <!-- /container -->
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: header" />
+<style>
+    .fieldError { border-color: #bd2130;}
+</style>
+<body>
+<div class="container">
+    <div th:replace="fragments/bodyHeader :: bodyHeader"/>
+
+    <div class="card bg-light">
+        <article class="card-body mx-auto" style="max-width: 400px;">
+            <h4 class="card-title mt-3 text-center" style="margin-bottom: 30px;">Won Mart 계성 생성하기</h4>
+            <form role="form" action="/member/new" th:object="${memberForm}" method="post">
+                <!-- 닉네임 -->
+                <div class="form-group input-group">
+                    <label th:for="name"></label>
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                    </div>
+                    <input type="text" th:field="*{nickName}" class="form-control" placeholder="닉네임을 입력하세요"
+                           th:class="${#fields.hasErrors('nickName')}? 'form-control fieldError' : 'form-control'">
+                </div>
+                <p th:if="${#fields.hasErrors('nickName')}" th:errors="*{nickName}"></p>
+                <!-- 도시 -->
+                <div class="form-group input-group">
+                    <label th:for="city"></label>
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-building"></i> </span>
+                    </div>
+                    <input type="text" th:field="*{city}" class="form-control" placeholder="지역구정보를 입력하세요"
+                           th:class="${#fields.hasErrors('city')}? 'form-control fieldError' : 'form-control'">
+                </div>
+                <p th:if="${#fields.hasErrors('city')}" th:errors="*{city}"></p>
+                <!-- 상세주소 -->
+                <div class="form-group input-group">
+                    <label th:for="street"></label>
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-road"></i> </span>
+                    </div>
+                    <input type="text" th:field="*{street}" class="form-control" placeholder="상세주소를 입력하세요"
+                           th:class="${#fields.hasErrors('street')}? 'form-control fieldError' : 'form-control'">
+                </div>
+                <p th:if="${#fields.hasErrors('street')}" th:errors="*{street}"></p>
+
+                <div class="form-group">
+                    <button type="submit" class="btn btn-outline-success btn-block"> 마트 입장 </button>
+                </div> <!-- form-group// -->
+            </form>
+        </article>
+    </div> <!-- card.// -->
+
+    <div th:replace="fragments/footer :: footer"/>
+</div>
+</body>
+</html>
+
+<!-- 샘플 -->
+<!--<div class="form-group input-group">-->
+<!--    <div class="input-group-prepend">-->
+<!--        <span class="input-group-text"> <i class="fa fa-lock"></i> </span>-->
+<!--    </div>-->
+<!--    <input class="form-control" placeholder="Create password" type="password">-->
+<!--</div> &lt;!&ndash; form-group// &ndash;&gt;-->
+<!--<div class="form-group input-group">-->
+<!--    <div class="input-group-prepend">-->
+<!--        <span class="input-group-text"> <i class="fa fa-lock"></i> </span>-->
+<!--    </div>-->
+<!--    <input class="form-control" placeholder="Repeat password" type="password">-->
+<!--</div> &lt;!&ndash; form-group// &ndash;&gt;-->
+<!--<div class="form-group input-group">-->
+<!--    <div class="input-group-prepend">-->
+<!--        <span class="input-group-text"> <i class="fa fa-building"></i> </span>-->
+<!--    </div>-->
+<!--    <select class="form-control">-->
+<!--        <option selected=""> Select job type</option>-->
+<!--        <option>Designer</option>-->
+<!--        <option>Manager</option>-->
+<!--        <option>Accaunting</option>-->
+<!--    </select>-->
+<!--</div> &lt;!&ndash; form-group end.// &ndash;&gt;-->
+<!--<div class="form-group input-group">-->
+<!--    <div class="input-group-prepend">-->
+<!--        <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>-->
+<!--    </div>-->
+<!--    <input name="" class="form-control" placeholder="Email address" type="email">-->
+<!--</div> &lt;!&ndash; form-group// &ndash;&gt;-->
+<!-- 주소 -->
+<!--<div class="form-group">-->
+<!--    <div class="input-group-prepend">-->
+<!--        <span class="input-group-text"> <i class="fa fa-building"></i> </span>-->
+<!--    </div>-->
+<!--    <select class="custom-select" style="max-width: 120px;">-->
+<!--        <option selected="">서울</option>-->
+<!--        <option value="1">경기</option>-->
+<!--        <option value="2">강원</option>-->
+<!--        <option value="3">충청</option>-->
+<!--        <option value="2">전라</option>-->
+<!--        <option value="3">경상</option>-->
+<!--    </select>-->
+<!--    <input name="" class="form-control" placeholder="상세 주소" type="text">-->
+<!--</div>-->

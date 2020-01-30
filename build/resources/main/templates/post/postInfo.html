@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"> <head th:replace="fragments/header :: header" /> <body>
+<div class="container">
+    <div th:replace="fragments/bodyHeader :: bodyHeader"/>
+
+    <div class="container mb-5" style="margin-top: 30px;">
+        <div class="row">
+            <div class="col-md-8">
+                <!-- 제목 -->
+                <h3 class="display-4" th:text="${post.title}"></h3>
+                <hr class="bg-dark w-25 ml-0">
+                <!-- 가격 -->
+                <a class="lead" th:text="${post.price}"></a> 원
+                <!-- 내용 -->
+                <p th:text="${post.body}"></p>
+                <!-- 작성자, 작성 시간-->
+                <ul class="list-unstyled pl-4">
+                    <li>작성자 : <i class="fa font-italic" th:text="${post.member.nickName}"></i></li>
+                    <li>작성시간 : <i class="fa font-italic" th:text="${#temporals.format(post.postTime, 'yyyy-MM-dd HH:mm')}"></i></li>
+                </ul>
+                <a href="#" th:href="@{/letter/{receiver_id}/new (receiver_id=${post.member.id})}" class="btn btn-outline-success rounded-0">쪽지 보내기</a>
+            </div>
+            <div class="col-md-4 mt-5">
+                <img class="card-img-top" th:src="${post.image}" alt="Card image cap">
+            </div>
+        </div>
+    </div>
+
+    <div th:replace="fragments/footer :: footer"/>
+</div> <!-- /container -->
+</body>
+</html>

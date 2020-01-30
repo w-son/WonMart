@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"> <head th:replace="fragments/header :: header" /> <body>
+<div class="container">
+    <div th:replace="fragments/bodyHeader :: bodyHeader"/>
+    <div>
+        <table class="table table-striped">
+            <thead> <tr>
+                <th>송신자</th> <th>수신자</th> <th>내용</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="letter : ${letters}">
+                <td th:text="${letter.sender}"></td>
+                <td th:text="${letter.receiver}"></td>
+                <td th:text="${letter.body}"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div th:replace="fragments/footer :: footer"/>
+</div> <!-- /container -->
+</body>
+</html>

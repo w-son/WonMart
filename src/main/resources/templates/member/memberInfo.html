@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/header :: header">
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <div th:replace="fragments/bodyHeader :: bodyHeader"/>
+    <!-- 여기부터 시작-->
+    <hr>
+    <div class="container bootstrap snippet">
+        <div class="row">
+            <div class="col-sm-10"><h1 th:text="${session.nickName}"></h1></div>
+        </div>
+        <div class="row">
+
+            <div class="col-sm-3">
+                <!-- 프로필 사진 -->
+                <br>
+                <div class="text-center">
+                    <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" alt="avatar">
+                </div>
+
+            </div>
+
+            <div class="col-sm-9">
+                <div class="tab-content">
+                    <div class="tab-pane active">
+                        <!-- form 시작부분 -->
+                        <hr>
+                        <form role="form" action="/member/info" th:object="${memberForm}" method="post">
+                            <div class="form-group">
+                                <div class="col-xs-6">
+                                    <label><h4>Won Mart 닉네임</h4></label>
+                                    <input type="text" class="form-control" th:value="${session.nickName}" th:name="nickName" th:id="nickName">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-xs-6">
+                                    <label><h4>사는지역</h4></label>
+                                    <input type="text" class="form-control" th:value="${session.address.getCity()}" th:name="city" th:id="city">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-xs-6">
+                                    <label><h4>도로명</h4></label>
+                                    <input type="text" class="form-control" th:value="${session.address.getStreet()}" th:name="street" th:id="street">
+                                </div>
+                            </div>
+                            <div style="margin-top: 5%;">
+                                <button type="submit" class="btn btn-outline-success rounded-0">수정하기</button>
+                                <a style="margin-left: 1%;" class="btn btn-outline-danger rounded-0" href="/member/quit">탈퇴하기</a>
+                            </div>
+                        </form>
+                        <hr>
+                        <!-- form 끝부분 -->
+                    </div>
+                </div>
+            </div> <!--col-sm-9-->
+        </div>
+    </div>
+
+    <div th:replace="fragments/footer :: footer"/>
+</div>
+
+</body>
+</html>
+
+

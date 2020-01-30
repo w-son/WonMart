@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<div class="header" th:fragment="bodyHeader">
+    <ul class="nav nav-pills pull-right">
+    </ul>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">WON MART</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--로그인 된 경우-->
+        <div class="collapse navbar-collapse" th:if="${session.member_id}">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="fa fa-user nav-link" href="/member/info"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="fa fa-envelope nav-link" href="/"></a>
+                </li>
+            </ul>
+            <a class="btn btn-outline-success mr-sm-2 rounded-0" href="/post">원마트입장</a>
+            <a class="btn btn-outline-success mr-sm-2 rounded-0" href="/post/new">판매하기</a>
+            <a class="btn btn-outline-success my-2 my-sm-0 rounded-0" href="/kakaoLogout">로그아웃</a>
+        </div>
+    </nav>
+
+</div>
