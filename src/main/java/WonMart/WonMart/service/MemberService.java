@@ -29,7 +29,7 @@ public class MemberService { // 생성, 삭제, 수정, 조회
      */
     @Transactional
     public Long join(Member member) {
-        validateDuplicateNickName(member.getNickName());
+        // validateDuplicateNickName(member.getNickName());
         memberRepository.save(member);
         return member.getId();
     }
@@ -56,7 +56,7 @@ public class MemberService { // 생성, 삭제, 수정, 조회
          */
         Member member = memberRepository.findOne(id);
         if(!member.getNickName().equals(nickName)) {
-            validateDuplicateNickName(nickName);
+            // validateDuplicateNickName(nickName);
         }
 
         member.setNickName(nickName);
