@@ -14,7 +14,6 @@
             <form role="form" action="/member/new" th:object="${memberForm}" method="post">
                 <!-- 닉네임 -->
                 <div class="form-group input-group">
-                    <label th:for="name"></label>
                     <div class="input-group-prepend">
                         <span class="input-group-text"> <i class="fa fa-user"></i> </span>
                     </div>
@@ -24,7 +23,6 @@
                 <p th:if="${#fields.hasErrors('nickName')}" th:errors="*{nickName}"></p>
                 <!-- 도시 -->
                 <div class="form-group input-group">
-                    <label th:for="city"></label>
                     <div class="input-group-prepend">
                         <span class="input-group-text"> <i class="fa fa-building"></i> </span>
                     </div>
@@ -34,7 +32,6 @@
                 <p th:if="${#fields.hasErrors('city')}" th:errors="*{city}"></p>
                 <!-- 상세주소 -->
                 <div class="form-group input-group">
-                    <label th:for="street"></label>
                     <div class="input-group-prepend">
                         <span class="input-group-text"> <i class="fa fa-road"></i> </span>
                     </div>

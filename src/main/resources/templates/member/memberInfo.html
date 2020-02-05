@@ -9,7 +9,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-
+<style>
+    .fieldError { border-color: #bd2130;}
+</style>
 <body>
 <div class="container">
     <div th:replace="fragments/bodyHeader :: bodyHeader"/>
@@ -34,26 +36,35 @@
                 <div class="tab-content">
                     <div class="tab-pane active">
                         <!-- form 시작부분 -->
+                        <!-- input form에 정보를 넣어두기가 까다로움 -->
+                        <!-- 해당 필드에 th:field와 th:value를 동시에 선언하지 못하기 때문임 -->
+                        <!-- th:field를 th:name + th:id로 대체 하는것이 해결 방법-->
                         <hr>
                         <form role="form" action="/member/info" th:object="${memberForm}" method="post">
                             <div class="form-group">
                                 <div class="col-xs-6">
                                     <label><h4>Won Mart 닉네임</h4></label>
-                                    <input type="text" class="form-control" th:value="${session.nickName}" th:name="nickName" th:id="nickName">
+                                    <input type="text" class="form-control" th:value="${session.nickName}" th:name="nickName" th:id="nickName"
+                                           th:class="${#fields.hasErrors('nickName')}? 'form-control fieldError' : 'form-control'">
                                 </div>
+                                <p th:if="${#fields.hasErrors('nickName')}" th:errors="*{nickName}"></p>
                             </div>
                             <div class="form-group">
                                 <div class="col-xs-6">
                                     <label><h4>사는지역</h4></label>
-                                    <input type="text" class="form-control" th:value="${session.address.getCity()}" th:name="city" th:id="city">
+                                    <input type="text" class="form-control" th:value="${session.address.getCity()}" th:name="city" th:id="city"
+                                           th:class="${#fields.hasErrors('city')}? 'form-control fieldError' : 'form-control'">
                                 </div>
+                                <p th:if="${#fields.hasErrors('city')}" th:errors="*{city}"></p>
                             </div>
 
                             <div class="form-group">
                                 <div class="col-xs-6">
                                     <label><h4>도로명</h4></label>
-                                    <input type="text" class="form-control" th:value="${session.address.getStreet()}" th:name="street" th:id="street">
+                                    <input type="text" class="form-control" th:value="${session.address.getStreet()}" th:name="street" th:id="street"
+                                           th:class="${#fields.hasErrors('street')}? 'form-control fieldError' : 'form-control'">
                                 </div>
+                                <p th:if="${#fields.hasErrors('street')}" th:errors="*{street}"></p>
                             </div>
                             <div style="margin-top: 5%;">
                                 <button type="submit" class="btn btn-outline-success rounded-0">수정하기</button>

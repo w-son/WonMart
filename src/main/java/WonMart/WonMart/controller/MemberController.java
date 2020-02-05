@@ -52,7 +52,15 @@ public class MemberController { // 회원가입, 회원조회, 회원수정, 회
     public String updateMemberInfo(@Valid MemberForm form, BindingResult result,  HttpSession session) {
 
         if(result.hasErrors()) {
-            return "member/memberInfo";
+            /*
+             수정 정보 처리
+             기존에 있던 닉네임 그대로 주소만 바꿨을 때 예
+             기존의 닉네임을 중복 닉네임으로 인식하게되는 예외를 처리
+             */
+            Member findMember = memberService.findOne((Long) session.getAttribute("member_id"));
+            if(!findMember.getNickName().equals(form.getNickName())) {
+                return "member/memberInfo";
+            }
         }
 
         String nickName = form.getNickName();

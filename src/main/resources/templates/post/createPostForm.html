@@ -1,23 +1,47 @@
 <!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org"> <head th:replace="fragments/header :: header" /> <body>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: header" />
+<style>
+    .fieldError { border-color: #bd2130;}
+</style>
+<body>
 <div class="container">
     <div th:replace="fragments/bodyHeader :: bodyHeader"/>
 
-    <form th:action="@{/post/new}" th:object="${form}" method="post">
-        <div class="form-group">
-            <label th:for="title">제목</label>
-            <input type="text" th:field="*{title}" class="form-control" placeholder="제목">
+    <form role="form" action="/post/new" th:object="${postForm}" method="post" enctype="multipart/form-data" style="margin-bottom: 30px">
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label th:for="title">제목</label>
+                <input type="text" th:field="*{title}" class="form-control" placeholder="제목"
+                       th:class="${#fields.hasErrors('title')}? 'form-control fieldError' : 'form-control'">
+            </div>
+
+            <div class="form-group col-md-6">
+                <label th:for="price">가격</label>
+                <input type="text" th:field="*{price}" class="form-control" placeholder="물품 가격"
+                       th:class="${#fields.hasErrors('price')}? 'form-control fieldError' : 'form-control'">
+            </div>
         </div>
-        <div class="form-group">
-            <label th:for="price">가격</label>
-            <input type="text" th:field="*{price}" class="form-control" placeholder="물품 가격">
-        </div>
+        <p th:if="${#fields.hasErrors('title')}" th:errors="*{title}"></p>
+        <p th:if="${#fields.hasErrors('price')}" th:errors="*{price}"></p>
+
         <div class="form-group">
             <label th:for="body">내용</label>
-            <input type="text" th:field="*{body}" class="form-control" placeholder="내용">
+            <textarea type="text" th:field="*{body}" class="form-control" rows="3"
+                      th:class="${#fields.hasErrors('body')}? 'form-control fieldError' : 'form-control'"></textarea>
         </div>
-        <button type="submit" class="btn btn-outline-success">판매하기</button> </form>
-    <br/>
+        <p th:if="${#fields.hasErrors('body')}" th:errors="*{body}"></p>
+
+        <div class="form-group">
+            <label>판매하실 물품과 관련된 이미지 파일을 올려주세요</label>
+            <input type="file" class="form-control-file" name="file">
+        </div>
+
+        <button type="submit" class="btn btn-outline-success">판매하기</button>
+
+    </form>
+
     <div th:replace="fragments/footer :: footer" />
 </div> <!-- /container -->
 </body>

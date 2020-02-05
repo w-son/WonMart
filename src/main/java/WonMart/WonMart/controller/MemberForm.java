@@ -1,6 +1,6 @@
 package WonMart.WonMart.controller;
 
-import WonMart.WonMart.validator.MemberValidator;
+import WonMart.WonMart.validator.MemberNickNameValidator;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -30,9 +30,9 @@ public class MemberForm {
 
     /*
      MemberValidator의 기준에 의해 필드 유효성을 검사하는
-     새로운 어노테이션 커스터마이징
+     어노테이션 커스터마이징
      */
-    @Constraint(validatedBy = MemberValidator.class)
+    @Constraint(validatedBy = MemberNickNameValidator.class)
     @Target({ElementType.FIELD})
     @Retention(RetentionPolicy.RUNTIME)
     public @interface UniqueNickName {

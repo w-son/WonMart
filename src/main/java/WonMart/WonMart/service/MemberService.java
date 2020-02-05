@@ -34,7 +34,7 @@ public class MemberService { // 생성, 삭제, 수정, 조회
         return member.getId();
     }
 
-    // 중복 닉네임을 확인하는 로직
+    // 중복 닉네임을 확인하는 로직 -> validation으로 대체
     private void validateDuplicateNickName(String nickName) {
         Member findMember = memberRepository.findByNickName(nickName);
         if(findMember != null) {
@@ -54,11 +54,13 @@ public class MemberService { // 생성, 삭제, 수정, 조회
          영속성 컨텍스트에 올라온 객체(findOne에 의해 호출됨)는 그 내용이 수정된 후에
          transaction이 끝나고 영속성 컨텍스트가 반환될때 변경사항이 데이터베이스에 저장된다
          */
+
         Member member = memberRepository.findOne(id);
+        /* validation 검사 Controller에서 하게끔 수정
         if(!member.getNickName().equals(nickName)) {
             // validateDuplicateNickName(nickName);
         }
-
+        */
         member.setNickName(nickName);
         member.setAddress(address);
     }
