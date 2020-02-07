@@ -28,8 +28,8 @@
 
         <div class="form-group">
             <label th:for="body">내용</label>
-            <textarea type="text" th:field="*{body}" class="form-control" rows="3"
-                      th:class="${#fields.hasErrors('body')}? 'form-control fieldError' : 'form-control'"></textarea>
+            <input type="text" th:field="*{body}" class="form-control" rows="3"
+                      th:class="${#fields.hasErrors('body')}? 'form-control fieldError' : 'form-control'">
         </div>
         <p th:if="${#fields.hasErrors('body')}" th:errors="*{body}"></p>
 
@@ -38,7 +38,7 @@
             <input type="file" class="form-control-file" name="file">
         </div>
 
-        <button type="submit" class="btn btn-outline-success">판매하기</button>
+        <button type="submit" class="btn btn-outline-success rounded-0">판매하기</button>
 
     </form>
 

@@ -31,9 +31,9 @@ public class PostRepository {
     }
 
     // 작성자 기준 Post
-    public List<Post> findByNickName(String nickName) {
-        return em.createQuery("select p from Post p where p.member.nickName = :nickName", Post.class)
-                .setParameter("nickName", nickName)
+    public List<Post> findByMemberId(Long id) {
+        return em.createQuery("select p from Post p where p.member.id = :id", Post.class)
+                .setParameter("id", id)
                 .getResultList();
     }
 

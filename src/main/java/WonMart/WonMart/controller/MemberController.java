@@ -48,6 +48,14 @@ public class MemberController { // 회원가입, 회원조회, 회원수정, 회
         return "member/memberInfo";
     }
 
+    @GetMapping("/member")
+    public String members(Model model) {
+        List<Member> members = memberService.findMembers();
+        model.addAttribute("members", members);
+
+        return "member/memberList";
+    }
+
     @PostMapping("/member/info")
     public String updateMemberInfo(@Valid MemberForm form, BindingResult result,  HttpSession session) {
 
@@ -90,14 +98,6 @@ public class MemberController { // 회원가입, 회원조회, 회원수정, 회
         session.setAttribute("address", null);
 
         return "redirect:/";
-    }
-
-    @GetMapping("/member")
-    public String members(Model model) {
-        List<Member> members = memberService.findMembers();
-        model.addAttribute("members", members);
-
-        return "member/memberList";
     }
 
 }

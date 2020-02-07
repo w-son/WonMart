@@ -18,7 +18,13 @@
                     <li>작성자 : <i class="fa font-italic" th:text="${post.member.nickName}"></i></li>
                     <li>작성시간 : <i class="fa font-italic" th:text="${#temporals.format(post.postTime, 'yyyy-MM-dd HH:mm')}"></i></li>
                 </ul>
-                <a href="#" th:href="@{/letter/{receiver_id}/new (receiver_id=${post.member.id})}" class="btn btn-outline-success rounded-0">쪽지 보내기</a>
+                <a th:if="${post.member.id} != ${session.member_id}" th:href="@{/letter/{receiver_id}/new (receiver_id=${post.member.id})}" class="btn btn-outline-success rounded-0">쪽지 보내기</a>
+
+                <a th:if="${post.member.id} == ${session.member_id}">
+                    <a th:href="@{/post/{post_id}/update (post_id=${post.id})}" class="btn btn-outline-success rounded-0">수정하기</a>
+                    <a th:href="@{/post/{post_id}/delete (post_id=${post.id})}" class="btn btn-outline-danger rounded-0" style="margin-left: 1%">삭제하기</a>
+                </a>
+
             </div>
             <div class="col-md-4 mt-5">
                 <img class="card-img-top" th:src="${post.image}" alt="Card image cap">
