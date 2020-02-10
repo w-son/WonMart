@@ -53,12 +53,33 @@ public class PostController { // 게시글 생성, 게시글 조회, 게시글 �
 
         /*
          Multipart로 받아온 파일을
-         static 하위에 저장하는 방법
+         프로젝트 내부에 저장하는 방법
+         빌드 경로에 저장하면 화면에 바로 보이기는 하지만
+         프로젝트 자체에 저장되지 않는 문제가 있음
          */
-        String fileName = RandomStringUtils.randomAlphanumeric(32) + file.getOriginalFilename();
-        String workingDirectory = System.getProperty("user.dir");
-        String downloadPath = workingDirectory + "/src/main/resources/static/img/sample";
-        file.transferTo(new File(downloadPath, fileName));
+        String fileName = RandomStringUtils.randomAlphanumeric(32);
+        String fileUrl;
+        if(!file.isEmpty()) {
+            fileName = fileName + file.getOriginalFilename();
+            fileUrl = "/img/post/" + fileName;
+            /* 파일 프로젝트 내부, 프로젝트 빌드 경로에 저장하는 방법
+            String workingDirectory = System.getProperty("user.dir");
+            String buildPath = workingDirectory + "/build/resources/main/static/img/post";
+            String projectPath = workingDirectory + "/src/main/resources/static/img/post";
+            file.transferTo(new File(buildPath, fileName));
+            file.transferTo(new File(projectPath, fileName));
+            */
+            File uploadDir = new File(System.getProperty("user.home") + "/Desktop/upload");
+            if(!uploadDir.exists()) {
+                // 디렉토리가 존재하지 않는 경우 생성
+                uploadDir.mkdir();
+            }
+            file.transferTo(new File(uploadDir, fileName));
+            // fileUrl = uploadDir + "/" + fileName;
+
+        } else {
+            fileUrl = "/img/not_ready.jpg";
+        }
 
         String title = form.getTitle();
         /*
@@ -67,8 +88,6 @@ public class PostController { // 게시글 생성, 게시글 조회, 게시글 �
          */
         int price = Integer.parseInt(form.getPrice());
         String body = form.getBody();
-        /* Post에 저장할 경로 */
-        String fileUrl = "/img/sample/" + fileName;
         postService.post((Long)session.getAttribute("member_id"), title, price, body, fileUrl);
 
         return "redirect:/";
