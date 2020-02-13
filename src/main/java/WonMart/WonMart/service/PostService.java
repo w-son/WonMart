@@ -35,7 +35,7 @@ public class PostService { // 생성, 삭제, 수정, 조회
     }
 
     @Transactional
-    public void updatePost(Long id, String title, int price, String body) {
+    public void updatePost(Long id, String title, int price, String body, String image) {
         // 변경 감지
         Post post = postRepository.findOne(id);
 
@@ -43,7 +43,7 @@ public class PostService { // 생성, 삭제, 수정, 조회
         post.setPostTime(LocalDateTime.now());
         post.setPrice(price);
         post.setBody(body);
-        // post.setImage(image);
+        post.setImage(image);
     }
 
     public Post findOne(Long id) {

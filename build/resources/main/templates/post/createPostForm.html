@@ -3,6 +3,15 @@
 <head th:replace="fragments/header :: header"/>
 <style>
     .fieldError { border-color: #bd2130;}
+    input[type="file"] {
+        display: none;
+    }
+    .custom-file-upload {
+        border: 1px solid #ccc;
+        display: inline-block;
+        padding: 6px 12px;
+        cursor: pointer;
+    }
 </style>
 <body>
 <div class="container">
@@ -34,9 +43,23 @@
         <p th:if="${#fields.hasErrors('body')}" th:errors="*{body}"></p>
 
         <div class="form-group">
-            <label>판매하실 물품과 관련된 이미지 파일을 올려주세요</label>
-            <input type="file" class="form-control-file" name="file">
+            <label id="upload" for="file-upload" class="btn btn-outline-dark rounded-0">판매하실 상품과 관련된 이미지 파일을 올려주세요</label>
+            <input id="file-upload" name="file" type="file" style="display:none;">
+
+            <label for="delete-form" class="btn btn-outline-dark rounded-0" onclick="refresh(this);">초기화</label>
+            <a id="delete-form"></a>
         </div>
+        <script type="text/javascript">
+            $('#file-upload').change(function() {
+                var i = $(this).prev('label').clone();
+                var file = $('#file-upload')[0].files[0].name;
+                $(this).prev('label').text(file);
+            });
+            function refresh(obj){
+                $(obj).closest('form').find('input[type="file"]').val('');
+                $('#upload').text('판매하실 상품과 관련된 이미지 파일을 올려주세요');
+            }
+        </script>
 
         <button type="submit" class="btn btn-outline-success rounded-0">판매하기</button>
 

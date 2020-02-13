@@ -16,10 +16,7 @@ import org.springframework.web.multipart.MultipartFile;
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 import javax.validation.constraints.NotEmpty;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -37,25 +34,10 @@ public class PostController { // 게시글 생성, 게시글 조회, 게시글 �
         return "post/createPostForm";
     }
 
-    /*
-     Requestpart 는 이미지 파일 업로드 관련 어노테이션
-     */
-    @PostMapping("/post/new")
-    public String create(
-            @RequestParam("file") MultipartFile file,
-            @Valid PostForm form,
-            BindingResult result,
-            HttpSession session) throws IOException { // 파라미터가 많아서 나눠서 작성 했음
-
-        if(result.hasErrors()) {
-            return "post/createPostForm";
-        }
-
+    public String uploadFile(MultipartFile file) throws IOException {
         /*
          Multipart로 받아온 파일을
-         프로젝트 내부에 저장하는 방법
-         빌드 경로에 저장하면 화면에 바로 보이기는 하지만
-         프로젝트 자체에 저장되지 않는 문제가 있음
+         프로젝트 외부에 저장하는 방법
          */
         String fileName = RandomStringUtils.randomAlphanumeric(32);
         String fileUrl;
@@ -81,6 +63,23 @@ public class PostController { // 게시글 생성, 게시글 조회, 게시글 �
             fileUrl = "/img/not_ready.jpg";
         }
 
+        return fileUrl;
+    }
+
+    /*
+     Requestpart 는 이미지 파일 업로드 관련 어노테이션
+     */
+    @PostMapping("/post/new")
+    public String create(
+            @RequestParam("file") MultipartFile file,
+            @Valid PostForm form,
+            BindingResult result,
+            HttpSession session) throws IOException { // 파라미터가 많아서 나눠서 작성 했음
+
+        if(result.hasErrors()) {
+            return "post/createPostForm";
+        }
+
         String title = form.getTitle();
         /*
          가격 문자열 : PostForm에서는 String
@@ -88,6 +87,7 @@ public class PostController { // 게시글 생성, 게시글 조회, 게시글 �
          */
         int price = Integer.parseInt(form.getPrice());
         String body = form.getBody();
+        String fileUrl = uploadFile(file);
         postService.post((Long)session.getAttribute("member_id"), title, price, body, fileUrl);
 
         return "redirect:/";
@@ -129,18 +129,22 @@ public class PostController { // 게시글 생성, 게시글 조회, 게시글 �
     }
 
     @PostMapping("/post/{post_id}/update")
-    public String update(@PathVariable("post_id") Long id, @Valid PostForm form, BindingResult result, Model model) {
+    public String update(
+            @RequestParam("file") MultipartFile file,
+            @PathVariable("post_id") Long id,
+            @Valid PostForm form, BindingResult result, Model model) throws IOException {
+
         if(result.hasErrors()) {
             Post post = postService.findOne(id);
             model.addAttribute("post", post);
             return "post/updatePost";
         }
-        // 업로드 이미지 변경 처리 미완료
+
         String title = form.getTitle();
         int price = Integer.parseInt(form.getPrice());
         String body = form.getBody();
-
-        postService.updatePost(id, title, price, body);
+        String fileUrl = uploadFile(file);
+        postService.updatePost(id, title, price, body, fileUrl);
 
         return "redirect:/mypost";
     }
