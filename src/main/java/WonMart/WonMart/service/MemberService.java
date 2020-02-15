@@ -73,8 +73,8 @@ public class MemberService { // 생성, 삭제, 수정, 조회
         return memberRepository.findAll();
     }
 
-    public Member findByKakaoKey(String kakaoKey) {
-        return memberRepository.findByKakaoKey(kakaoKey);
+    public Member findBySocialKey(String socialKey) {
+        return memberRepository.findBySocialKey(socialKey);
     }
 
     public Member findByNickName(String nickName) {

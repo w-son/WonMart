@@ -30,11 +30,11 @@ public class MemberRepository {
                 .getResultList();
     }
 
-    public Member findByKakaoKey(String kakaoKey) {
+    public Member findBySocialKey(String socialKey) {
         Member findMember;
         try {
-            findMember =  em.createQuery("select m from Member m where m.kakaoKey = :kakaoKey", Member.class)
-                    .setParameter("kakaoKey", kakaoKey)
+            findMember =  em.createQuery("select m from Member m where m.socialKey = :socialKey", Member.class)
+                    .setParameter("socialKey", socialKey)
                     .getSingleResult();
 
         } catch (NoResultException e) {

@@ -1,5 +1,6 @@
 package WonMart.WonMart.controller;
 
+import WonMart.WonMart.controller.login.SessionController;
 import WonMart.WonMart.domain.Address;
 import WonMart.WonMart.domain.Member;
 import WonMart.WonMart.service.MemberService;
@@ -18,6 +19,7 @@ import java.util.List;
 public class MemberController { // 회원가입, 회원조회, 회원수정, 회원탈퇴
 
     private final MemberService memberService;
+    private final SessionController sessionController;
 
     @PostMapping("/member/new")
     public String create(@Valid MemberForm form, BindingResult result, HttpSession session) {
@@ -28,15 +30,13 @@ public class MemberController { // 회원가입, 회원조회, 회원수정, 회
 
         Address address = new Address(form.getCity(), form.getStreet());
         Member member = new Member();
-        member.setKakaoKey(session.getAttribute("kakaoKey").toString());
+        member.setSocialKey(session.getAttribute("socialKey").toString());
         member.setNickName(form.getNickName());
         member.setAddress(address);
         Long member_id = memberService.join(member);
 
         // 세션에 멤버의 정보를 저장
-        session.setAttribute("member_id", member_id);
-        session.setAttribute("nickName", member.getNickName());
-        session.setAttribute("address", member.getAddress());
+        sessionController.setSession(session, member_id, member.getNickName(), member.getAddress());
 
         return "redirect:/";
     }
@@ -76,11 +76,9 @@ public class MemberController { // 회원가입, 회원조회, 회원수정, 회
 
         Long id = (Long) session.getAttribute("member_id");
         memberService.updateMember(id, nickName, address);
-
         Member updatedMember = memberService.findOne(id);
 
-        session.setAttribute("nickName", updatedMember.getNickName());
-        session.setAttribute("address", updatedMember.getAddress());
+        sessionController.setSession(session, id, updatedMember.getNickName(), updatedMember.getAddress());
 
         return "redirect:/";
     }
@@ -91,11 +89,7 @@ public class MemberController { // 회원가입, 회원조회, 회원수정, 회
         Member member = memberService.findOne(id);
         memberService.quit(member);
 
-        session.setAttribute("access_token", null);
-        session.setAttribute("kakaoKey", null);
-        session.setAttribute("member_id", null);
-        session.setAttribute("nickName", null);
-        session.setAttribute("address", null);
+        sessionController.clearSession(session);
 
         return "redirect:/";
     }

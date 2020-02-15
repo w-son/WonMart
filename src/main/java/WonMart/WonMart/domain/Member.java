@@ -17,12 +17,12 @@ public class Member {
     private Long id;
 
     /*
-     처음에 카카오 로그인을 실행했을 때 DB에 카카오 키가 존재하는 경우 : 회원가입을 한 적 있는 회원이므로 세션에 member_id를 저장하고 redirect
-     처음에 카카오 로그인을 실행했을 때 DB에 카카오 키가 존재하지 않는 경우 : 회원가입을 진행한 후 세션에 member_id를 저장
+     처음에 소셜 로그인을 실행했을 때 DB에 소셜 키가 존재하는 경우 : 회원가입을 한 적 있는 회원이므로 세션에 member_id를 저장하고 redirect
+     처음에 소셜 로그인을 실행했을 때 DB에 소셜 키가 존재하지 않는 경우 : 회원가입을 진행한 후 세션에 member_id를 저장
 
      나중에 member_id를 통해 findOne을 쉽게 수행하기 위해서 이런 방식으로 설계
      */
-    private String kakaoKey;
+    private String socialKey;
 
     private String nickName;
 
