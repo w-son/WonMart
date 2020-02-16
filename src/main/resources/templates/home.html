@@ -10,8 +10,6 @@
 
     <style>
         .icon {
-            width: 35px;
-            height: 35px;
             margin: 5px;
         }
         .mcard {
@@ -34,20 +32,20 @@
                     </div>
                     <div class="card-body" th:unless="${session.member_id}">
                         <div id="dynamic_container">
-                            <div style="color: #87848b"><h6>Login With</h6></div>
+<!--                            <div style="color: #87848b"><h6>Login With</h6></div>-->
                             <div>
                                 <a>
                                     <img class="icon" src="img/icon_google.png">
-                                </a>
+                                </a><br>
                                 <a href="https://kauth.kakao.com/oauth/authorize?client_id=46755ba94eb707cd876dbfd1b716ceab&redirect_uri=http://localhost:8080/kakaoLogin&response_type=code">
                                     <img class="icon" src="img/icon_kakao.png">
-                                </a>
+                                </a><br>
                                 <a href="https://nid.naver.com/oauth2.0/authorize?response_type=code&client_id=2cUCbzWwkKNT41u9QWhB&redirect_uri=http://localhost:8080/naverLogin">
                                     <img class="icon" src="img/icon_naver.png">
-                                </a>
+                                </a><br>
                                 <a>
                                     <img class="icon" src="img/icon_facebook.png">
-                                </a>
+                                </a><br>
                             </div>
                         </div>
                     </div>
