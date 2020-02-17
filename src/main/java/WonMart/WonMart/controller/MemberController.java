@@ -38,7 +38,7 @@ public class MemberController { // 회원가입, 회원조회, 회원수정, 회
         // 세션에 멤버의 정보를 저장
         sessionController.setSession(session, member_id, member.getNickName(), member.getAddress());
 
-        return "redirect:/";
+        return "redirect:/post";
     }
 
     @GetMapping("/member/info")
@@ -80,7 +80,7 @@ public class MemberController { // 회원가입, 회원조회, 회원수정, 회
 
         sessionController.setSession(session, id, updatedMember.getNickName(), updatedMember.getAddress());
 
-        return "redirect:/";
+        return "redirect:/post";
     }
 
     @RequestMapping("/member/quit")

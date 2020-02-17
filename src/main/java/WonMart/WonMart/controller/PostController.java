@@ -2,11 +2,8 @@ package WonMart.WonMart.controller;
 
 import WonMart.WonMart.domain.Post;
 import WonMart.WonMart.service.PostService;
-import com.sun.org.apache.xpath.internal.operations.Mod;
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.lang3.RandomStringUtils;
-import org.apache.tomcat.util.http.fileupload.FileUtils;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -15,11 +12,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
-import javax.validation.constraints.NotEmpty;
 import java.io.*;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.List;
 
 @Controller
@@ -90,7 +83,7 @@ public class PostController { // 게시글 생성, 게시글 조회, 게시글 �
         String fileUrl = uploadFile(file);
         postService.post((Long)session.getAttribute("member_id"), title, price, body, fileUrl);
 
-        return "redirect:/";
+        return "redirect:/post";
     }
 
     @GetMapping("/post/{post_id}/info")

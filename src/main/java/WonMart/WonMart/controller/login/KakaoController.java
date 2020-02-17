@@ -158,7 +158,7 @@ public class KakaoController {
              세션에 member_id와 nickName을 추가한 후 첫 화면으로 redirect
              */
             sessionController.setSession(session, findMember.getId(), findMember.getNickName(), findMember.getAddress());
-            return "redirect:/";
+            return "redirect:/post";
         }
     }
 

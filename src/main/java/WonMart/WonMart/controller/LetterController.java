@@ -51,7 +51,7 @@ public class LetterController { // 쪽지 생성, 쪽지 조회
         Long sender_id = (Long) session.getAttribute("member_id");
         letterService.send(sender_id, receiver_id, form.getBody());
 
-        return "redirect:/";
+        return "redirect:/post";
     }
 
     @GetMapping("/letter")

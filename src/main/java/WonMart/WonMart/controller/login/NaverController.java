@@ -122,7 +122,7 @@ public class NaverController { // 동일한 과정에 대한 설명 주석 Kakao
         } else {
             // 회원가입을 한 적 있는 경우
             sessionController.setSession(session, findMember.getId(), findMember.getNickName(), findMember.getAddress());
-            return "redirect:/";
+            return "redirect:/post";
         }
     }
 
