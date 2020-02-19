@@ -10,9 +10,9 @@
 
     <style>
         .icon {
-            width: 35px;
-            height: 35px;
-            margin: 5px;
+            width: 37px;
+            height: 37px;
+            margin: 3px;
         }
 
         :root {
@@ -68,13 +68,11 @@
                                 <div style="margin-bottom: 10px;">
                                     <a class="btn btn-light" style="border-radius: 1rem;">나눌수록 행복한 중고거래!</a>
                                 </div>
-
-
                                 <div style="margin-bottom: 25px;">
                                     <a class="btn btn-light" style="border-radius: 1rem;">빠르고, 안전하고, 간편하게!</a>
                                 </div>
 
-                                <div class="text-left"  style="margin-bottom: 5px;">
+                                <div class="text-left" data-onsuccess="onSignIn"  style="margin-bottom: 5px;">
                                     <a class="small" href="#">Login with Socials</a>
                                 </div>
                                 <div>
@@ -87,7 +85,7 @@
                                     <a href="https://nid.naver.com/oauth2.0/authorize?response_type=code&client_id=2cUCbzWwkKNT41u9QWhB&redirect_uri=http://localhost:8080/naverLogin">
                                         <img class="icon" src="/img/icon_naver.png">
                                     </a>
-                                    <a>
+                                    <a href = "https://www.facebook.com/v6.0/dialog/oauth?client_id=888171918306283&redirect_uri=http://localhost:8080/facebookLogin&state={st=state123abc,ds=123456789}";>
                                         <img class="icon" src="/img/icon_facebook.png">
                                     </a>
                                 </div>

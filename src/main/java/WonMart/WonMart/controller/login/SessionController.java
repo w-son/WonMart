@@ -9,6 +9,7 @@ import org.apache.http.NameValuePair;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.methods.HttpDelete;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.message.BasicNameValuePair;
@@ -44,6 +45,7 @@ public class SessionController { // 코드 중복 최소화 하기 위해 만든
 
         kakaoLogout(session);
         naverLogout(session);
+        facebookLogout(session);
 
         // 저장했던 세션 정보를 모두 제거
         clearSession(session);
@@ -110,6 +112,10 @@ public class SessionController { // 코드 중복 최소화 하기 위해 만든
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public void facebookLogout(HttpSession session) {
+        // 미완성
     }
 
 }
