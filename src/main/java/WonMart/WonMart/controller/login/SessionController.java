@@ -43,9 +43,12 @@ public class SessionController { // 코드 중복 최소화 하기 위해 만든
     @RequestMapping("/logout")
     public String logout(HttpSession session) {
 
+        /*
         kakaoLogout(session);
         naverLogout(session);
         facebookLogout(session);
+        googleLogout(session);
+        */
 
         // 저장했던 세션 정보를 모두 제거
         clearSession(session);
@@ -115,6 +118,10 @@ public class SessionController { // 코드 중복 최소화 하기 위해 만든
     }
 
     public void facebookLogout(HttpSession session) {
+        // 미완성
+    }
+
+    public void googleLogout(HttpSession session) {
         // 미완성
     }
 

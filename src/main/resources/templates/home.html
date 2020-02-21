@@ -1,10 +1,38 @@
 <!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" itemscope itemtype="http://schema.org/Article">
 <head th:replace="fragments/header :: header">
+<head>
     <title>Won Mart</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="UTF-8" />
 </head>
 <body>
+
+<!-- BEGIN Pre-requisites -->
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="https://apis.google.com/js/client:platform.js?onload=start" async defer></script>
+<!-- END Pre-requisites -->
+<script text="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+<script text="text/javascript">
+
+    function start() {
+        gapi.load('auth2', function() {
+            auth2 = gapi.auth2.init({
+                client_id: '73226585392-7vn0ueqgu87m34r4iur00sura4a6njtk.apps.googleusercontent.com',
+                // Scopes to request in addition to 'profile' and 'email'
+                //scope: 'additional_scope'
+            });
+        });
+    }
+
+    $(function(){
+        $('#googleSignIn').click(function(){
+            auth2.grantOfflineAccess().then(signInCallback);
+        });
+    });
+
+</script>
+
 <div class="container">
 <!--    <div th:replace="fragments/bodyHeader :: bodyHeader" />-->
 
@@ -76,7 +104,7 @@
                                     <a class="small" href="#">Login with Socials</a>
                                 </div>
                                 <div>
-                                    <a>
+                                    <a id="googleSignIn">
                                         <img class="icon" src="/img/icon_google.png">
                                     </a>
                                     <a href="https://kauth.kakao.com/oauth/authorize?client_id=46755ba94eb707cd876dbfd1b716ceab&redirect_uri=http://localhost:8080/kakaoLogin&response_type=code">
@@ -90,6 +118,10 @@
                                     </a>
                                 </div>
 
+                                <script>
+
+                                </script>
+
                             </div>
                         </div>
                     </div>
@@ -100,5 +132,43 @@
 
 <!--    <div th:replace="fragments/footer :: footer" />-->
 </div>
+
+<script>
+    function signInCallback(authResult) {
+
+        if (auth2.isSignedIn.get()) {
+            var profile = auth2.currentUser.get().getBasicProfile();
+            var form = {
+                id : profile.getId(),
+                name : profile.getName(),
+                email : profile.getEmail()
+            };
+
+            $.ajax({
+                url: '/googleLogin',
+                method: 'POST',
+                type : 'json',
+                // Always include an `X-Requested-With` header in every AJAX request,
+                // to protect against CSRF attacks.
+                headers: {
+                    'X-Requested-With': 'XMLHttpRequest'
+                },
+                contentType: 'application/json',
+                data: JSON.stringify(form),
+                success: function(result) {
+                    // Handle or verify the server response.
+                    console.log(result);
+                    if (result === "False") {
+                        window.location.href = '/member/new';
+                    } else {
+                        window.location.href = '/post';
+                    }
+                }
+            });
+        }
+        // https://developers.google.com/identity/sign-in/web/sign-in
+    }
+</script>
+
 </body>
 </html>

@@ -9,6 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
@@ -20,6 +21,12 @@ public class MemberController { // 회원가입, 회원조회, 회원수정, 회
 
     private final MemberService memberService;
     private final SessionController sessionController;
+
+    @GetMapping("/member/new")
+    public String create(Model model) {
+        model.addAttribute("memberForm", new MemberForm());
+        return "member/createMemberForm";
+    }
 
     @PostMapping("/member/new")
     public String create(@Valid MemberForm form, BindingResult result, HttpSession session) {

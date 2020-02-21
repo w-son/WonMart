@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="file://$PROJECT_DIR$/build/generated/sources/annotationProcessor/java/main" libraries="{platform}" />
-    <file url="file://$PROJECT_DIR$/src/main" libraries="{platform}" />
+    <file url="file://$PROJECT_DIR$" libraries="{jquery-3.3.1}" />
+    <file url="file://$PROJECT_DIR$/build/generated/sources/annotationProcessor/java/main" libraries="{jquery, jquery-1.10.1, jquery-2.2.3, jquery-3.2.0, jquery-3.3.1, platform}" />
+    <file url="file://$PROJECT_DIR$/src/main" libraries="{jquery, jquery-1.10.1, jquery-2.2.3, jquery-3.2.0, jquery-3.3.1, platform}" />
   </component>
 </project>

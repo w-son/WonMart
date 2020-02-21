@@ -89,7 +89,7 @@ public class KakaoController {
     // 접근 토큰을 통해서 사용자 정보 추출
     public JsonNode getKakaoUserInfo(String accessToken) {
 
-        final String RequestUrl = "https://kapi.kakao.com/v1/user/me";
+        final String RequestUrl = "https://kapi.kakao.com/v2/user/me";
         final HttpClient client = HttpClientBuilder.create().build();
         final HttpPost post = new HttpPost(RequestUrl);
 
@@ -114,7 +114,7 @@ public class KakaoController {
     }
 
     @RequestMapping("/kakaoLogin")
-    public String kakaoLogin(@RequestParam("code") String code, HttpSession session, Model model) throws Exception {
+    public String kakaoLogin(@RequestParam("code") String code, HttpSession session, Model model) {
 
         // 코드를 통해 접근토큰을 생성하고 생성된 토큰을 이용해 사용자의 정보를 불러온다
         String accessToken = getAccessToken(code);
@@ -122,12 +122,12 @@ public class KakaoController {
 
         // 카카오 아이디값을 통해 member들을 유일하게 식별할 것이다
         String socialKey = userInfo.get("id").toString();
-        String email = userInfo.get("kaccount_email").toString();
+        // String email = userInfo.get("kaccount_email").toString();
         String nickname = userInfo.get("properties").get("nickname").toString();
         String image = userInfo.get("properties").get("profile_image").toString();
 
         System.out.println(socialKey);
-        System.out.println(email);
+        // System.out.println(email);
         System.out.println(nickname);
         System.out.println(image);
 
