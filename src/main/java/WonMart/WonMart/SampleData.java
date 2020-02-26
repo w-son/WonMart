@@ -1,6 +1,7 @@
 package WonMart.WonMart;
 
 import WonMart.WonMart.domain.Address;
+import WonMart.WonMart.domain.Letter;
 import WonMart.WonMart.domain.Member;
 import WonMart.WonMart.domain.Post;
 import lombok.RequiredArgsConstructor;
@@ -39,10 +40,17 @@ public class SampleData {
             Post post2 = createPost(member, "아이맥 LATE 2013 21인치", 100, "데탑 새로 맞춰서 싸게 내놓습니다", "/img/sample/imac.jpg");
             Post post3 = createPost(member, "에어팟 프로", 230000, "갤럭시 이용자라 안쓰게 되더라구요 쿨거래 원합니다 쪽지 주세요", "/img/sample/airpods.jpg");
 
+            Letter letter1 = createLetter(member, "조진웅", "손흥민", "저기요");
+            Letter letter2 = createLetter(member, "조진웅", "손흥민", "사실 의향 있으신가요?");
+            Letter letter3 = createLetter(member, "조진웅", "손흥민", "이거 되게 쌈");
+
             em.persist(post1);
             em.persist(post2);
             em.persist(post3);
 
+            em.persist(letter1);
+            em.persist(letter2);
+            em.persist(letter3);
         }
 
         public void dbInit2() {
@@ -54,9 +62,17 @@ public class SampleData {
             Post post2 = createPost(member, "마이프로틴 초코 카라멜 프로틴 400그람", 19000, "존나 맛있습니다 운동할 맛 나요", "/img/sample/protein.jpg");
             Post post3 = createPost(member, "중국어 기초 회화 1편", 10000, "단어 외우다가 지쳐서 팝니다 필기흔적없고 상태 좋습니다", "/img/sample/chinese.jpg");
 
+            Letter letter1 = createLetter(member, "인시는 단어 외우는중", "손흥민", "중국어 기초 회화편 사실거에요?");
+            Letter letter2 = createLetter(member, "인시는 단어 외우는중", "손흥민", "사실 생각 있으시면");
+            Letter letter3 = createLetter(member, "인시는 단어 외우는중", "손흥민", "연락처 따로 쪽지로 남겨주세요");
+
             em.persist(post1);
             em.persist(post2);
             em.persist(post3);
+
+            em.persist(letter1);
+            em.persist(letter2);
+            em.persist(letter3);
 
         }
 
@@ -71,6 +87,11 @@ public class SampleData {
         private Post createPost(Member member, String title, int price, String body, String image) {
             Post post = Post.createPost(member, title, price, body, image);
             return post;
+        }
+
+        private Letter createLetter(Member member, String sender, String receiver, String body) {
+            Letter letter = Letter.createLetter(member, sender, receiver, body);
+            return letter;
         }
 
     }
