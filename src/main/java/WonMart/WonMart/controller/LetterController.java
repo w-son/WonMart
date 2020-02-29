@@ -53,7 +53,7 @@ public class LetterController { // 쪽지 생성, 쪽지 조회
         Long sender_id = (Long) session.getAttribute("member_id");
         letterService.send(sender_id, receiver_id, form.getBody());
 
-        return "redirect:/post";
+        return "redirect:/letter";
     }
 
     @GetMapping("/letter")
@@ -89,6 +89,31 @@ public class LetterController { // 쪽지 생성, 쪽지 조회
         model.addAttribute("letters", letters);
 
         return "letter/letterList";
+    }
+
+    @GetMapping("/letter/{receiver_nickname}")
+    public String room(
+            @PathVariable("receiver_nickname") String receiver_nickname,
+            Model model, HttpSession session) {
+
+        Member me = memberService.findByNickName((String) session.getAttribute("nickName"));
+        Member receiver = memberService.findByNickName(receiver_nickname);
+
+        List<Letter> sent = me.getLetters();
+        List<Letter> received = receiver.getLetters();
+
+        sent.removeIf(letter -> !letter.getReceiver().equals(receiver.getNickName()));
+        received.removeIf(letter -> !letter.getReceiver().equals(me.getNickName()));
+
+        List<Letter> letters = new ArrayList<>();
+        letters.addAll(sent);
+        letters.addAll(received);
+        letters.sort(new AscendingTimeSort());
+
+        model.addAttribute("receiver_id", receiver.getId());
+        model.addAttribute("letters", letters);
+
+        return "letter/letterRoom";
     }
 
 }
