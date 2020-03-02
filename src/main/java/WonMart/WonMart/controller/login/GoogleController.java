@@ -27,9 +27,8 @@ public class GoogleController {
      해당 뷰페이지로 응답을 하게 되는 ViewResolver가 실행되냐
      문자열 그대로를 리턴하게 되는 MessageConverter가 실행되냐를 결정한다
 
-     @ResponseBody 어노테이션을 사용하면 MessageConverte가 실행되어서
+     @ResponseBody 어노테이션을 사용하면 MessageConverter가 실행되어서
      메세지 그대로를 리턴하게 된다
-
      */
     @ResponseBody
     @RequestMapping(value = "/googleLogin", method = RequestMethod.POST)
