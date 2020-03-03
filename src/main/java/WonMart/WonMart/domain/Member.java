@@ -1,5 +1,6 @@
 package WonMart.WonMart.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -30,10 +31,12 @@ public class Member {
     private Address address;
 
     // Post와 OneToMany 연관관계
+    @JsonIgnore
     @OneToMany(mappedBy = "member", cascade = CascadeType.ALL)
     private List<Post> posts = new ArrayList<>();
 
     // Letter과 OneToMany 연관관계
+    @JsonIgnore
     @OneToMany(mappedBy = "member", cascade = CascadeType.ALL)
     private List<Letter> letters = new ArrayList<>();
 

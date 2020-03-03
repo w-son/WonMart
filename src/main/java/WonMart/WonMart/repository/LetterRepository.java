@@ -26,6 +26,11 @@ public class LetterRepository {
                 .getResultList();
     }
 
+    public List<Letter> findAllWithJoinFetch() {
+        return em.createQuery("select l from Letter l" + " join fetch l.member m", Letter.class)
+                .getResultList();
+    }
+
     // 송신자 쪽지 조회
     public List<Letter> findBySender(String sender) {
         return em.createQuery("select l from Letter l where l.sender = :sender", Letter.class)

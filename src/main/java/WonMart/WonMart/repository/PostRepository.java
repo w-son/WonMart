@@ -30,6 +30,11 @@ public class PostRepository {
                 .getResultList();
     }
 
+    public List<Post> findAllWithJoinFetch() {
+        return em.createQuery("select p from Post p" + " join fetch p.member m", Post.class)
+                .getResultList();
+    }
+
     // 작성자 기준 Post
     public List<Post> findByMemberId(Long id) {
         return em.createQuery("select p from Post p where p.member.id = :id", Post.class)

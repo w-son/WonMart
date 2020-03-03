@@ -15,18 +15,21 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /*
+ 순서 1
+
  Controller와 RestController의 차이
  Controller의 경우 메서드 리턴시 ViewResolver를 통해서 해당하는 view를 리턴하게 된다
  RestControlller의 경우에는 view가 아닌 해당하는 메세지를 그대로 리턴하게 된다
  메서드 앞에 @ResponseBody annotation을 붙히는 것과 같은 의미라고 보면 된다
 
- 참고
- - NoArgsConstructor : 파라미터가 없는 기본 생성자 생성
- - RequiredArgsConstructor : final 이나 nonnull 인 필드값만 파라미터로 받는 생성자 생성
- - AllArgsConstructor : 모든 필드값을 파라미터로 받는 생성자 생성
+ - Entity 가 아닌 DTO를 통한 CRUD시 이점
+     1) 엔티티를 외부에 노출하지 않음
+     2) API 스펙을 바꾸는 경우를 방지
+     3) 유지보수에 뛰어난 설계
+     4) 응답을 JSON array 형태가 아닌 dictionary의 형태로 스펙의 확장성과 자유도를 높임
+        ... Result<T>
 
- - final : 한번 초기화하면 다시 값을 바꿀 수 없는 상수
- - static : 클래스 어디서든 객체 생성 없이 접근할 수 있는 전역 변수 클래스로도 활용 가능
+ -  요청을 보낼때 RequestBody의 형태가 JSON 형태가 되게끔 요청해야 content-type에 맞게 수신할 수 있음
  */
 
 @RestController
@@ -34,17 +37,6 @@ import java.util.stream.Collectors;
 public class MemberApi { // 조회, 생성, 수정
 
     private final MemberService memberService;
-
-    /*
-     - Entity 가 아닌 DTO를 통한 CRUD시 이점
-     1) 엔티티를 외부에 노출하지 않음
-     2) API 스펙을 바꾸는 경우를 방지
-     3) 유지보수에 뛰어난 설계
-     4) 응답을 JSON array 형태가 아닌 dictionary의 형태로 스펙의 확장성과 자유도를 높임
-        ... Result<T>
-
-     -  요청을 보낼때 RequestBody의 형태가 JSON 형태가 되게끔 요청해야 content-type에 맞게 수신할 수 있음
-     */
 
     // 생성
     @PostMapping("/api/members/new")
