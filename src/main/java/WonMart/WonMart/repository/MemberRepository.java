@@ -30,6 +30,20 @@ public class MemberRepository {
                 .getResultList();
     }
 
+    /******************************************/
+    public List<Member> findAllWithJoinFetch() {
+        return em.createQuery("select distinct m from Member m" + " join fetch m.posts p", Member.class)
+                .getResultList();
+    }
+
+    public List<Member> findAllWithJoinFetchAndPaging(int offset, int limit) {
+        return em.createQuery("select m from Member m" + " join fetch m.posts p", Member.class)
+                .setFirstResult(offset)
+                .setMaxResults(limit)
+                .getResultList();
+    }
+    /******************************************/
+
     public Member findBySocialKey(String socialKey) {
         Member findMember;
         try {

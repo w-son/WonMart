@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /*
- 순서 3
+ 순서 2
  내용 PostApi 참조
  */
 @RestController
