@@ -5,7 +5,7 @@
 ## 소개 및 개요
 
 - 중고 거래 물품 공유 및 기타 컨텐츠의 CRUD를 활용한 소통 기반 웹 어플리케이션 개발을 목표로 한다.
-- 도메인 설계와 JPA 응용, 소셜 서비스 API 활용, Spring MVC 구동 원리를 이해하고 이를 바탕으로 Spring Framework에 대한 활용 능력을 높인다.
+- 도메인 설계와 JPA 응용, 소셜 서비스 활용 및 Spring MVC 구동 원리를 이해함으로써 Spring Framework에 대한 활용 능력을 높인다.
 
 ## Contributors
 
