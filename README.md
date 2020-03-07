@@ -23,8 +23,9 @@
 ## 기능 구성 
 - Login API (Facebook, Google, Kakao, Naver)
 - Member, Post, Letter CRUD
+- Dynamic JPQL with QueryDSL
 - Validation, WebConfiguration Customized
-- resources API
+- API resources
 
 ### API Usage
 

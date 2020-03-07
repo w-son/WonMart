@@ -12,6 +12,7 @@ public class WonMartApplication {
 	 - apache httpcore httpcore httpclient 추가
 	 - apache commons 추가
 	 - jackson core 추가
+	 - querydsl 추가 (4, 44, 51-68)
 
 	 주석 작성 요령
 	 - 엔티티끼리 중복되는 함수에 대한 설명 주석은 모든 엔티티에 작성하지 않고 Member관련 클래스에 작성

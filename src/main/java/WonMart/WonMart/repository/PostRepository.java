@@ -1,12 +1,15 @@
 package WonMart.WonMart.repository;
 
-import WonMart.WonMart.domain.Member;
 import WonMart.WonMart.domain.Post;
+import WonMart.WonMart.domain.QMember;
+import WonMart.WonMart.domain.QPost;
+import com.querydsl.core.types.dsl.BooleanExpression;
+import com.querydsl.jpa.impl.JPAQueryFactory;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
+import org.springframework.util.StringUtils;
 
 import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
 import java.util.List;
 
 @Repository
@@ -40,6 +43,32 @@ public class PostRepository {
         return em.createQuery("select p from Post p where p.member.id = :id", Post.class)
                 .setParameter("id", id)
                 .getResultList();
+    }
+
+    /*
+     Query DSL
+     동적 쿼리 활용 시 코드를 깔끔하게 활용할 수 있는 라이브러리
+     검색 로직에 활용하면 유용하다
+     */
+    public List<Post> filterPosts(String nickName) {
+        JPAQueryFactory query = new JPAQueryFactory(em);
+        QPost post = QPost.post;
+        QMember member = QMember.member;
+
+        return query
+                .select(post)
+                .from(post)
+                .join(post.member, member)
+                .where(checkNickName(nickName))
+                .limit(1000)
+                .fetch();
+    }
+
+    private BooleanExpression checkNickName(String nickName) {
+        if(!StringUtils.hasText(nickName)) {
+            return null;
+        }
+        return QMember.member.nickName.like(nickName);
     }
 
 }

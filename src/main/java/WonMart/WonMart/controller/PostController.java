@@ -10,6 +10,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 import java.io.*;
@@ -101,6 +102,15 @@ public class PostController { // 게시글 생성, 게시글 조회, 게시글 �
         model.addAttribute("posts", posts);
 
         return "post/myPostList";
+    }
+
+    @GetMapping("/post/filter")
+    public String filterPosts(Model model, HttpServletRequest request) {
+        String nickName = request.getParameter("filter");
+        List<Post> posts = postService.filterPosts(nickName);
+        model.addAttribute("posts", posts);
+
+        return "post/postList";
     }
 
     @GetMapping("/post")
