@@ -27,6 +27,53 @@
 - Validation, WebConfiguration Customized
 - API resources
 
-### API Usage
+## API Usage
 
-- 준비중
+` Request (v4) `
+```
+curl -X GET --header 'Accept: application/json' 'http://{도메인주소}/api/v4/members'
+```
+
+` Response (v4) `
+```
+[
+    {
+        "nickName": "조진웅",
+        "address": {
+            "city": "서울특별시",
+            "street": "국제금융로"
+        },
+        "posts": [
+            {
+                "writer": "조진웅",
+                "title": "아이폰 팝니다",
+                "price": 10000
+            },
+            {
+                "writer": "조진웅",
+                "title": "아이맥 LATE 2013 21인치",
+                "price": 100
+            }
+        ]
+    },
+    {
+        "nickName": "인시",
+        "address": {
+            "city": "서울특별시",
+            "street": "와우산로"
+        },
+        "posts": [
+            {
+                "writer": "인시",
+                "title": "이케아 책상",
+                "price": 45000
+            },
+            {
+                "writer": "인시",
+                "title": "마이프로틴 초코 카라멜 프로틴 400그람",
+                "price": 19000
+            }
+        ]
+    }
+]
+```
