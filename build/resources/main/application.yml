@@ -20,9 +20,6 @@ spring:
       max-file-size: 10MB
       max-request-size: 10MB
 
-  jwt:
-    secret: v$@lepel@qz$&a
-
 logging.level:
   org.hibernate.SQL: debug
   org.hibernate.type: trace
