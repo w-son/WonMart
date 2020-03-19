@@ -43,7 +43,9 @@ public class PostService { // 생성, 삭제, 수정, 조회
         post.setPostTime(LocalDateTime.now());
         post.setPrice(price);
         post.setBody(body);
-        post.setImage(image);
+        if(!image.equals("")) {
+            post.setImage(image);
+        }
     }
 
     public Post findOne(Long id) {

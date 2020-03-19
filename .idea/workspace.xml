@@ -2,28 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc3d4310-7b35-4951-96b3-68e0a9d0600a" name="Default Changelist" comment="">
-<<<<<<< HEAD
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-=======
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/controller/KakaoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/controller/KakaoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/repository/MemberRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/repository/MemberRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/service/LetterService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/service/LetterService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/service/MemberService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/service/MemberService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
->>>>>>> master
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/controller/PostController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/controller/PostController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/domain/Post.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/domain/Post.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/service/PostService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/service/PostService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/WonMart/WonMart/service/PostServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/WonMart/WonMart/service/PostServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WonMart/WonMart/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WonMart/WonMart/controller/PostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WonMart/WonMart/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WonMart/WonMart/service/PostService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/post/createPostForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/post/createPostForm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/post/updatePost.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/post/updatePost.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,15 +34,40 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="WonMart" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="WonMart" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="WonMart" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-<<<<<<< HEAD
-=======
-  <component name="ProjectCodeStyleSettingsMigration">
-    <option name="version" value="1" />
-  </component>
->>>>>>> master
   <component name="ProjectId" id="1X6IAvdYBcZbBHdNqyycVvbcLOC" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -61,22 +82,113 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-<<<<<<< HEAD
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-=======
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
->>>>>>> master
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.WonMartApplication">
+    <configuration name="MemberServiceTest.회원등록" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;WonMart.WonMart.service.MemberServiceTest.회원등록&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="WonMart [compileQuerydslJava]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="compileQuerydslJava" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="WonMart [compileQuerydsl]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="compileQuerydsl" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="WonMart [compileTestJava]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="compileTestJava" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="WonMart [processQuerydslResources]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="processQuerydslResources" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="WonMartApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="WonMart.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="WonMart.WonMart.WonMartApplication" />
@@ -84,6 +196,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.WonMart [processQuerydslResources]" />
+        <item itemvalue="Gradle.WonMart [compileTestJava]" />
+        <item itemvalue="Gradle.WonMart [compileQuerydslJava]" />
+        <item itemvalue="Gradle.WonMart [compileQuerydsl]" />
+        <item itemvalue="Gradle.MemberServiceTest.회원등록" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -108,13 +229,9 @@
       <option name="presentableId" value="Default" />
       <updated>1580359977313</updated>
       <workItem from="1580359980675" duration="76000" />
-<<<<<<< HEAD
-      <workItem from="1580370717288" duration="1837000" />
-=======
-      <workItem from="1580371201164" duration="69000" />
-      <workItem from="1580371485176" duration="337000" />
-      <workItem from="1580371840275" duration="794000" />
->>>>>>> master
+      <workItem from="1584516920837" duration="45000" />
+      <workItem from="1584516969501" duration="40000" />
+      <workItem from="1584517011790" duration="5102000" />
     </task>
     <servers />
   </component>
@@ -126,55 +243,45 @@
       <screen x="0" y="23" width="1680" height="979" />
     </state>
     <state x="444" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.979@0.23.1680.979" timestamp="1580371609891" />
-    <state width="1358" height="280" key="GridCell.Tab.0.bottom" timestamp="1580372612008">
-      <screen x="0" y="23" width="1680" height="980" />
+    <state width="1398" height="445" key="GridCell.Tab.0.bottom" timestamp="1584602110360">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1366" height="220" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1580360056074" />
+    <state width="1398" height="445" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1584602110360" />
     <state width="1358" height="280" key="GridCell.Tab.0.bottom/0.23.1680.980@0.23.1680.980" timestamp="1580372612008" />
-    <state width="1358" height="280" key="GridCell.Tab.0.center" timestamp="1580372612006">
-      <screen x="0" y="23" width="1680" height="980" />
+    <state width="1398" height="445" key="GridCell.Tab.0.center" timestamp="1584602110359">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1366" height="220" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1580360056074" />
+    <state width="1398" height="445" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1584602110359" />
     <state width="1358" height="280" key="GridCell.Tab.0.center/0.23.1680.980@0.23.1680.980" timestamp="1580372612006" />
-    <state width="1358" height="280" key="GridCell.Tab.0.left" timestamp="1580372612006">
-      <screen x="0" y="23" width="1680" height="980" />
+    <state width="1398" height="445" key="GridCell.Tab.0.left" timestamp="1584602110358">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1366" height="220" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1580360056073" />
+    <state width="1398" height="445" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1584602110358" />
     <state width="1358" height="280" key="GridCell.Tab.0.left/0.23.1680.980@0.23.1680.980" timestamp="1580372612006" />
-    <state width="1358" height="280" key="GridCell.Tab.0.right" timestamp="1580372612007">
-      <screen x="0" y="23" width="1680" height="980" />
+    <state width="1398" height="445" key="GridCell.Tab.0.right" timestamp="1584602110359">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1366" height="220" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1580360056074" />
+    <state width="1398" height="445" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1584602110359" />
     <state width="1358" height="280" key="GridCell.Tab.0.right/0.23.1680.980@0.23.1680.980" timestamp="1580372612007" />
-    <state width="1358" height="280" key="GridCell.Tab.1.bottom" timestamp="1580372612009">
-      <screen x="0" y="23" width="1680" height="980" />
+    <state width="1398" height="445" key="GridCell.Tab.1.bottom" timestamp="1584602110362">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1366" height="220" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1580360056075" />
+    <state width="1398" height="445" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1584602110362" />
     <state width="1358" height="280" key="GridCell.Tab.1.bottom/0.23.1680.980@0.23.1680.980" timestamp="1580372612009" />
-    <state width="1358" height="280" key="GridCell.Tab.1.center" timestamp="1580372612009">
-      <screen x="0" y="23" width="1680" height="980" />
+    <state width="1398" height="445" key="GridCell.Tab.1.center" timestamp="1584602110361">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1366" height="220" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1580360056075" />
+    <state width="1398" height="445" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1584602110361" />
     <state width="1358" height="280" key="GridCell.Tab.1.center/0.23.1680.980@0.23.1680.980" timestamp="1580372612009" />
-    <state width="1358" height="280" key="GridCell.Tab.1.left" timestamp="1580372612008">
-      <screen x="0" y="23" width="1680" height="980" />
+    <state width="1398" height="445" key="GridCell.Tab.1.left" timestamp="1584602110361">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1366" height="220" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1580360056075" />
+    <state width="1398" height="445" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1584602110361" />
     <state width="1358" height="280" key="GridCell.Tab.1.left/0.23.1680.980@0.23.1680.980" timestamp="1580372612008" />
-    <state width="1358" height="280" key="GridCell.Tab.1.right" timestamp="1580372612009">
-      <screen x="0" y="23" width="1680" height="980" />
-    </state>
-    <state width="1366" height="220" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1580360056075" />
-<<<<<<< HEAD
-    <state x="221" y="100" key="SettingsEditor" timestamp="1580371661321">
+    <state width="1398" height="445" key="GridCell.Tab.1.right" timestamp="1584602110361">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="221" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1580371661321" />
-    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1580371693172">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1580371693172" />
-=======
+    <state width="1398" height="445" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1584602110361" />
     <state width="1358" height="280" key="GridCell.Tab.1.right/0.23.1680.980@0.23.1680.980" timestamp="1580372612009" />
     <state width="1358" height="309" key="GridCell.Tab.2.bottom" timestamp="1580372417100">
       <screen x="0" y="23" width="1680" height="980" />
@@ -205,6 +312,5 @@
       <screen x="0" y="23" width="1680" height="979" />
     </state>
     <state x="645" y="254" width="670" height="676" key="search.everywhere.popup/0.23.1680.979@0.23.1680.979" timestamp="1580371797071" />
->>>>>>> master
   </component>
 </project>
