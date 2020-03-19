@@ -1,6 +1,6 @@
 package WonMart.WonMart.validator;
 
-import WonMart.WonMart.controller.PostForm;
+import WonMart.WonMart.controller.form.PostForm;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;

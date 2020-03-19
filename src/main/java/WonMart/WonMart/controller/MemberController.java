@@ -1,5 +1,6 @@
 package WonMart.WonMart.controller;
 
+import WonMart.WonMart.controller.form.MemberForm;
 import WonMart.WonMart.controller.login.SessionController;
 import WonMart.WonMart.domain.Address;
 import WonMart.WonMart.domain.Member;
@@ -9,7 +10,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;

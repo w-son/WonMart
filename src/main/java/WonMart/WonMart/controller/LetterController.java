@@ -1,5 +1,6 @@
 package WonMart.WonMart.controller;
 
+import WonMart.WonMart.controller.form.LetterForm;
 import WonMart.WonMart.domain.Letter;
 import WonMart.WonMart.domain.Member;
 import WonMart.WonMart.service.LetterService;

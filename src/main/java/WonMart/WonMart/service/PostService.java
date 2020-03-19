@@ -2,6 +2,7 @@ package WonMart.WonMart.service;
 
 import WonMart.WonMart.domain.Member;
 import WonMart.WonMart.domain.Post;
+import WonMart.WonMart.domain.PostCategory;
 import WonMart.WonMart.repository.MemberRepository;
 import WonMart.WonMart.repository.PostRepository;
 import lombok.RequiredArgsConstructor;
@@ -21,9 +22,9 @@ public class PostService { // 생성, 삭제, 수정, 조회
     private final MemberRepository memberRepository;
 
     @Transactional
-    public Long post(Long member_id, String title, int price, String body, String image) {
+    public Long post(Long member_id, String title, int price, PostCategory category, String body, String image) {
         Member member = memberRepository.findOne(member_id);
-        Post post = Post.createPost(member, title, price, body, image);
+        Post post = Post.createPost(member, title, price, category, body, image);
         postRepository.save(post);
 
         return post.getId();
@@ -35,13 +36,16 @@ public class PostService { // 생성, 삭제, 수정, 조회
     }
 
     @Transactional
-    public void updatePost(Long id, String title, int price, String body, String image) {
+    public void updatePost(Long id, String title, int price, PostCategory category, String body, String image) {
         // 변경 감지
         Post post = postRepository.findOne(id);
 
         post.setTitle(title);
         post.setPostTime(LocalDateTime.now());
         post.setPrice(price);
+        if(category != null) {
+            post.setCategory(category);
+        }
         post.setBody(body);
         if(!image.equals("")) {
             post.setImage(image);

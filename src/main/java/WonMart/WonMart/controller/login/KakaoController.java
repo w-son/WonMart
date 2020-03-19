@@ -1,6 +1,6 @@
 package WonMart.WonMart.controller.login;
 
-import WonMart.WonMart.controller.MemberForm;
+import WonMart.WonMart.controller.form.MemberForm;
 import WonMart.WonMart.domain.Member;
 import WonMart.WonMart.service.MemberService;
 import com.fasterxml.jackson.databind.JsonNode;

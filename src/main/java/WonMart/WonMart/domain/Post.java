@@ -25,6 +25,10 @@ public class Post {
 
     private int price;
 
+    // enum을 쓸 때 반드시 들어가야 하는 annotation
+    @Enumerated(EnumType.STRING)
+    private PostCategory category;
+
     // https://freehoon.tistory.com/123 텍스트 편집기 reference
     private String body;
 
@@ -42,12 +46,13 @@ public class Post {
      생성 메서드
      NoArgsConstructor annotation을 통해 생성 메서드로만 객체 생성
      */
-    public static Post createPost(Member member, String title, int price, String body, String image) {
+    public static Post createPost(Member member, String title, int price, PostCategory category, String body, String image) {
         Post post = new Post();
         member.addPost(post);
         post.setTitle(title);
         post.setPostTime(LocalDateTime.now());
         post.setPrice(price);
+        post.setCategory(category);
         post.setBody(body);
         post.setImage(image);
 

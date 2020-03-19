@@ -6,18 +6,59 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/SampleData$InitService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/SampleData$InitService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/SampleData.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/SampleData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/api/MemberApi$CreateMemberResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/api/MemberApi$CreateMemberResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/api/MemberApi$ExtendedMemberDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/api/MemberApi$ExtendedMemberDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/api/MemberApi$ExtendedPostDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/api/MemberApi$ExtendedPostDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/api/MemberApi$MemberDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/api/MemberApi$MemberDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/api/MemberApi$Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/api/MemberApi$Result.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/api/MemberApi$UpdateMemberResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/api/MemberApi$UpdateMemberResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/api/MemberApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/api/MemberApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/controller/LetterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/controller/LetterController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/controller/LetterForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/controller/MemberController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/controller/MemberController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/controller/MemberForm$UniqueNickName.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/controller/MemberForm.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/controller/PostController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/controller/PostController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/controller/PostForm$ValidPrice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/controller/PostForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/controller/login/FacebookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/controller/login/FacebookController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/controller/login/GoogleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/controller/login/GoogleController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/controller/login/KakaoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/controller/login/KakaoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/controller/login/NaverController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/controller/login/NaverController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/domain/Post.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/domain/Post.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/domain/QPost.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/domain/QPost.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/service/PostService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/service/PostService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/WonMart/WonMart/service/PostServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/WonMart/WonMart/service/PostServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/validator/MemberNickNameValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/validator/MemberNickNameValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/validator/PostPriceValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/validator/PostPriceValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/generated/querydsl/WonMart/WonMart/domain/QPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated/querydsl/WonMart/WonMart/domain/QPost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/fragments/bodyHeader.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/fragments/bodyHeader.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/post/createPostForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/post/createPostForm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/post/updatePost.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/post/updatePost.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WonMart/WonMart/SampleData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WonMart/WonMart/SampleData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WonMart/WonMart/api/MemberApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WonMart/WonMart/api/MemberApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WonMart/WonMart/controller/LetterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WonMart/WonMart/controller/LetterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WonMart/WonMart/controller/LetterForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WonMart/WonMart/controller/form/LetterForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WonMart/WonMart/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WonMart/WonMart/controller/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WonMart/WonMart/controller/MemberForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WonMart/WonMart/controller/form/MemberForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/WonMart/WonMart/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WonMart/WonMart/controller/PostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WonMart/WonMart/controller/PostForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WonMart/WonMart/controller/form/PostForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WonMart/WonMart/controller/login/FacebookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WonMart/WonMart/controller/login/FacebookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WonMart/WonMart/controller/login/GoogleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WonMart/WonMart/controller/login/GoogleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WonMart/WonMart/controller/login/KakaoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WonMart/WonMart/controller/login/KakaoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WonMart/WonMart/controller/login/NaverController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WonMart/WonMart/controller/login/NaverController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WonMart/WonMart/domain/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WonMart/WonMart/domain/Post.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/WonMart/WonMart/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WonMart/WonMart/service/PostService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WonMart/WonMart/validator/MemberNickNameValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WonMart/WonMart/validator/MemberNickNameValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WonMart/WonMart/validator/PostPriceValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WonMart/WonMart/validator/PostPriceValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/bodyHeader.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/bodyHeader.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/post/createPostForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/post/createPostForm.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/post/updatePost.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/post/updatePost.html" afterDir="false" />
     </list>
@@ -64,6 +105,13 @@
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -198,11 +246,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.MemberServiceTest.회원등록" />
         <item itemvalue="Gradle.WonMart [processQuerydslResources]" />
         <item itemvalue="Gradle.WonMart [compileTestJava]" />
         <item itemvalue="Gradle.WonMart [compileQuerydslJava]" />
         <item itemvalue="Gradle.WonMart [compileQuerydsl]" />
-        <item itemvalue="Gradle.MemberServiceTest.회원등록" />
       </list>
     </recent_temporary>
   </component>
@@ -231,7 +279,7 @@
       <workItem from="1580359980675" duration="76000" />
       <workItem from="1584516920837" duration="45000" />
       <workItem from="1584516969501" duration="40000" />
-      <workItem from="1584517011790" duration="5102000" />
+      <workItem from="1584517011790" duration="13918000" />
     </task>
     <servers />
   </component>
@@ -243,45 +291,45 @@
       <screen x="0" y="23" width="1680" height="979" />
     </state>
     <state x="444" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.979@0.23.1680.979" timestamp="1580371609891" />
-    <state width="1398" height="445" key="GridCell.Tab.0.bottom" timestamp="1584602110360">
+    <state width="1398" height="445" key="GridCell.Tab.0.bottom" timestamp="1584634303615">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="445" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1584602110360" />
+    <state width="1398" height="445" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1584634303615" />
     <state width="1358" height="280" key="GridCell.Tab.0.bottom/0.23.1680.980@0.23.1680.980" timestamp="1580372612008" />
-    <state width="1398" height="445" key="GridCell.Tab.0.center" timestamp="1584602110359">
+    <state width="1398" height="445" key="GridCell.Tab.0.center" timestamp="1584634303614">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="445" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1584602110359" />
+    <state width="1398" height="445" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1584634303614" />
     <state width="1358" height="280" key="GridCell.Tab.0.center/0.23.1680.980@0.23.1680.980" timestamp="1580372612006" />
-    <state width="1398" height="445" key="GridCell.Tab.0.left" timestamp="1584602110358">
+    <state width="1398" height="445" key="GridCell.Tab.0.left" timestamp="1584634303613">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="445" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1584602110358" />
+    <state width="1398" height="445" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1584634303613" />
     <state width="1358" height="280" key="GridCell.Tab.0.left/0.23.1680.980@0.23.1680.980" timestamp="1580372612006" />
-    <state width="1398" height="445" key="GridCell.Tab.0.right" timestamp="1584602110359">
+    <state width="1398" height="445" key="GridCell.Tab.0.right" timestamp="1584634303614">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="445" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1584602110359" />
+    <state width="1398" height="445" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1584634303614" />
     <state width="1358" height="280" key="GridCell.Tab.0.right/0.23.1680.980@0.23.1680.980" timestamp="1580372612007" />
-    <state width="1398" height="445" key="GridCell.Tab.1.bottom" timestamp="1584602110362">
+    <state width="1398" height="445" key="GridCell.Tab.1.bottom" timestamp="1584634303616">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="445" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1584602110362" />
+    <state width="1398" height="445" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1584634303616" />
     <state width="1358" height="280" key="GridCell.Tab.1.bottom/0.23.1680.980@0.23.1680.980" timestamp="1580372612009" />
-    <state width="1398" height="445" key="GridCell.Tab.1.center" timestamp="1584602110361">
+    <state width="1398" height="445" key="GridCell.Tab.1.center" timestamp="1584634303615">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="445" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1584602110361" />
+    <state width="1398" height="445" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1584634303615" />
     <state width="1358" height="280" key="GridCell.Tab.1.center/0.23.1680.980@0.23.1680.980" timestamp="1580372612009" />
-    <state width="1398" height="445" key="GridCell.Tab.1.left" timestamp="1584602110361">
+    <state width="1398" height="445" key="GridCell.Tab.1.left" timestamp="1584634303615">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="445" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1584602110361" />
+    <state width="1398" height="445" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1584634303615" />
     <state width="1358" height="280" key="GridCell.Tab.1.left/0.23.1680.980@0.23.1680.980" timestamp="1580372612008" />
-    <state width="1398" height="445" key="GridCell.Tab.1.right" timestamp="1584602110361">
+    <state width="1398" height="445" key="GridCell.Tab.1.right" timestamp="1584634303616">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="445" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1584602110361" />
+    <state width="1398" height="445" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1584634303616" />
     <state width="1358" height="280" key="GridCell.Tab.1.right/0.23.1680.980@0.23.1680.980" timestamp="1580372612009" />
     <state width="1358" height="309" key="GridCell.Tab.2.bottom" timestamp="1580372417100">
       <screen x="0" y="23" width="1680" height="980" />

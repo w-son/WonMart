@@ -35,9 +35,27 @@
                     <a class="nav-link" href="/logout">나가기</a>
                 </li>
             </ul>
+
             <form class="form-inline my-2 my-lg-0" role="form" th:action="@{/post/filter}">
-                <input class="form-group form-control mr-sm-2 rounded-0" name="filter" id="filter" placeholder="닉네임을 입력해주세요" aria-label="Search" style="width: 170px;">
-                <button class="btn btn-outline-success my-2 my-sm-0 rounded-0" type="submit">Search</button>
+
+<!--                <input class="form-group form-control mr-sm-2 rounded-0" name="filter" id="filter" placeholder="닉네임을 입력해주세요" aria-label="Search" style="width: 170px;">-->
+<!--                <button class="btn btn-outline-success my-2 my-sm-0 rounded-0" type="submit">Search</button>-->
+
+                <div class="input-group">
+                    <select class="custom-select rounded-0" name="filter" id="filter" aria-label="Example select with button addon">
+                        <option selected value="">Select Category</option>
+                        <option value="가전">가전</option>
+                        <option value="전자">전자</option>
+                        <option value="패션">패션</option>
+                        <option value="뷰티">뷰티</option>
+                        <option value="뷰티">도서</option>
+                        <option value="기타">기타</option>
+                    </select>
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-success rounded-0" type="submit">Filter</button>
+                    </div>
+                </div>
+
             </form>
         </div>
     </nav>

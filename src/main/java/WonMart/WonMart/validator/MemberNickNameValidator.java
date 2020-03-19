@@ -1,6 +1,6 @@
 package WonMart.WonMart.validator;
 
-import WonMart.WonMart.controller.MemberForm;
+import WonMart.WonMart.controller.form.MemberForm;
 import WonMart.WonMart.domain.Member;
 import WonMart.WonMart.repository.MemberRepository;
 import lombok.RequiredArgsConstructor;

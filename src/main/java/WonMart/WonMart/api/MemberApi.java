@@ -1,8 +1,7 @@
 package WonMart.WonMart.api;
 
-import WonMart.WonMart.controller.MemberForm;
+import WonMart.WonMart.controller.form.MemberForm;
 import WonMart.WonMart.domain.Address;
-import WonMart.WonMart.domain.Letter;
 import WonMart.WonMart.domain.Member;
 import WonMart.WonMart.domain.Post;
 import WonMart.WonMart.repository.MemberRepository;
@@ -13,7 +12,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
-import javax.xml.transform.Result;
 import java.util.List;
 import java.util.stream.Collectors;
 

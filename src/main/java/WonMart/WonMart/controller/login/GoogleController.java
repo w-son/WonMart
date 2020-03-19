@@ -1,10 +1,8 @@
 package WonMart.WonMart.controller.login;
 
-import WonMart.WonMart.controller.MemberForm;
 import WonMart.WonMart.domain.Member;
 import WonMart.WonMart.service.MemberService;
 import lombok.RequiredArgsConstructor;
-import org.apache.http.HttpRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestBody;

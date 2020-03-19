@@ -24,6 +24,8 @@ public class QPost extends EntityPathBase<Post> {
 
     public final StringPath body = createString("body");
 
+    public final EnumPath<PostCategory> category = createEnum("category", PostCategory.class);
+
     public final NumberPath<Long> id = createNumber("id", Long.class);
 
     public final StringPath image = createString("image");

@@ -1,6 +1,8 @@
 package WonMart.WonMart.controller;
 
+import WonMart.WonMart.controller.form.PostForm;
 import WonMart.WonMart.domain.Post;
+import WonMart.WonMart.domain.PostCategory;
 import WonMart.WonMart.service.PostService;
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.lang3.RandomStringUtils;
@@ -82,9 +84,13 @@ public class PostController { // 게시글 생성, 게시글 조회, 게시글 �
          Validation 검사 후 저장 시에는 integer형으로 변환 후 저장
          */
         int price = Integer.parseInt(form.getPrice());
+        PostCategory category = form.getCategory();
+        if(category == null) {
+            category = PostCategory.기타;
+        }
         String body = form.getBody();
         String fileUrl = uploadFile(file);
-        postService.post((Long)session.getAttribute("member_id"), title, price, body, fileUrl);
+        postService.post((Long)session.getAttribute("member_id"), title, price, category, body, fileUrl);
 
         return "redirect:/post";
     }
@@ -147,12 +153,13 @@ public class PostController { // 게시글 생성, 게시글 조회, 게시글 �
 
         String title = form.getTitle();
         int price = Integer.parseInt(form.getPrice());
+        PostCategory category = form.getCategory();
         String body = form.getBody();
         String fileUrl = "";
         if(!file.isEmpty()) {
             fileUrl = uploadFile(file);
         }
-        postService.updatePost(id, title, price, body, fileUrl);
+        postService.updatePost(id, title, price, category, body, fileUrl);
 
         return "redirect:/mypost";
     }
