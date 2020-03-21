@@ -64,6 +64,8 @@ public class PostService { // 생성, 삭제, 수정, 조회
         return postRepository.findByMemberId(id);
     }
 
-    public List<Post> filterPosts(String nickName) { return postRepository.filterPosts(nickName); }
+    public List<Post> filterPostsByCategory(PostCategory category) { return postRepository.filterPostsByCategory(category); }
+
+    public List<Post> filterPostsByNickName(String nickName) { return postRepository.filterPostsByNickname(nickName); }
 
 }

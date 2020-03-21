@@ -114,8 +114,12 @@ public class PostController { // 게시글 생성, 게시글 조회, 게시글 �
 
     @GetMapping("/post/filter")
     public String filterPosts(Model model, HttpServletRequest request) {
-        String nickName = request.getParameter("filter");
-        List<Post> posts = postService.filterPosts(nickName);
+        String filter = request.getParameter("filter");
+        PostCategory category = null;
+        if(!filter.equals("")) {
+            category = PostCategory.valueOf(filter);
+        }
+        List<Post> posts = postService.filterPostsByCategory(category);
         model.addAttribute("posts", posts);
 
         return "post/postList";

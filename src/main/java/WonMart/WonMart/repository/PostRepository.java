@@ -1,6 +1,7 @@
 package WonMart.WonMart.repository;
 
 import WonMart.WonMart.domain.Post;
+import WonMart.WonMart.domain.PostCategory;
 import WonMart.WonMart.domain.QMember;
 import WonMart.WonMart.domain.QPost;
 import com.querydsl.core.types.dsl.BooleanExpression;
@@ -50,7 +51,28 @@ public class PostRepository {
      동적 쿼리 활용 시 코드를 깔끔하게 활용할 수 있는 라이브러리
      검색 로직에 활용하면 유용하다
      */
-    public List<Post> filterPosts(String nickName) {
+
+    // 카케고리 기준 필터
+    public List<Post> filterPostsByCategory(PostCategory category) {
+        JPAQueryFactory query = new JPAQueryFactory(em);
+        QPost post = QPost.post;
+
+        return query
+                .select(post)
+                .from(post)
+                .where(checkCategory(category))
+                .limit(1000)
+                .fetch();
+    }
+    private BooleanExpression checkCategory(PostCategory category) {
+        if(category == null) {
+            return null;
+        }
+        return QPost.post.category.eq(category);
+    }
+
+    // 멤버 닉네임 기준 필터
+    public List<Post> filterPostsByNickname(String nickName) {
         JPAQueryFactory query = new JPAQueryFactory(em);
         QPost post = QPost.post;
         QMember member = QMember.member;
@@ -63,7 +85,6 @@ public class PostRepository {
                 .limit(1000)
                 .fetch();
     }
-
     private BooleanExpression checkNickName(String nickName) {
         if(!StringUtils.hasText(nickName)) {
             return null;
