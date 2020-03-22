@@ -2,28 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc3d4310-7b35-4951-96b3-68e0a9d0600a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/controller/PostController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/controller/PostController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/repository/PostRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/repository/PostRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/service/PostService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/WonMart/WonMart/service/PostService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/test/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WonMart/WonMart/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WonMart/WonMart/controller/PostController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WonMart/WonMart/repository/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WonMart/WonMart/repository/PostRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WonMart/WonMart/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WonMart/WonMart/service/PostService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/bodyHeader.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/bodyHeader.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/post/createPostForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/post/createPostForm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/post/updatePost.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/post/updatePost.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/WonMart.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +64,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1X6IAvdYBcZbBHdNqyycVvbcLOC" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -102,6 +88,11 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/static/img" />
+    </key>
   </component>
   <component name="RunManager" selected="Spring Boot.WonMartApplication">
     <configuration name="WonMart [compileJava]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -247,6 +238,8 @@
       <workItem from="1584719508186" duration="220000" />
       <workItem from="1584719759915" duration="3307000" />
       <workItem from="1584773733740" duration="2084000" />
+      <workItem from="1584776046444" duration="40000" />
+      <workItem from="1584884633488" duration="538000" />
     </task>
     <servers />
   </component>
@@ -258,45 +251,45 @@
       <screen x="0" y="23" width="1680" height="979" />
     </state>
     <state x="444" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.979@0.23.1680.979" timestamp="1580371609891" />
-    <state width="1398" height="445" key="GridCell.Tab.0.bottom" timestamp="1584775933627">
+    <state width="1398" height="445" key="GridCell.Tab.0.bottom" timestamp="1584885262205">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="445" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1584775933627" />
+    <state width="1398" height="445" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1584885262205" />
     <state width="1358" height="280" key="GridCell.Tab.0.bottom/0.23.1680.980@0.23.1680.980" timestamp="1580372612008" />
-    <state width="1398" height="445" key="GridCell.Tab.0.center" timestamp="1584775933627">
+    <state width="1398" height="445" key="GridCell.Tab.0.center" timestamp="1584885262205">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="445" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1584775933627" />
+    <state width="1398" height="445" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1584885262205" />
     <state width="1358" height="280" key="GridCell.Tab.0.center/0.23.1680.980@0.23.1680.980" timestamp="1580372612006" />
-    <state width="1398" height="445" key="GridCell.Tab.0.left" timestamp="1584775933626">
+    <state width="1398" height="445" key="GridCell.Tab.0.left" timestamp="1584885262204">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="445" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1584775933626" />
+    <state width="1398" height="445" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1584885262204" />
     <state width="1358" height="280" key="GridCell.Tab.0.left/0.23.1680.980@0.23.1680.980" timestamp="1580372612006" />
-    <state width="1398" height="445" key="GridCell.Tab.0.right" timestamp="1584775933627">
+    <state width="1398" height="445" key="GridCell.Tab.0.right" timestamp="1584885262205">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="445" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1584775933627" />
+    <state width="1398" height="445" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1584885262205" />
     <state width="1358" height="280" key="GridCell.Tab.0.right/0.23.1680.980@0.23.1680.980" timestamp="1580372612007" />
-    <state width="1398" height="445" key="GridCell.Tab.1.bottom" timestamp="1584775933628">
+    <state width="1398" height="445" key="GridCell.Tab.1.bottom" timestamp="1584885262206">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="445" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1584775933628" />
+    <state width="1398" height="445" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1584885262206" />
     <state width="1358" height="280" key="GridCell.Tab.1.bottom/0.23.1680.980@0.23.1680.980" timestamp="1580372612009" />
-    <state width="1398" height="445" key="GridCell.Tab.1.center" timestamp="1584775933628">
+    <state width="1398" height="445" key="GridCell.Tab.1.center" timestamp="1584885262205">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="445" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1584775933628" />
+    <state width="1398" height="445" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1584885262205" />
     <state width="1358" height="280" key="GridCell.Tab.1.center/0.23.1680.980@0.23.1680.980" timestamp="1580372612009" />
-    <state width="1398" height="445" key="GridCell.Tab.1.left" timestamp="1584775933628">
+    <state width="1398" height="445" key="GridCell.Tab.1.left" timestamp="1584885262205">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="445" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1584775933628" />
+    <state width="1398" height="445" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1584885262205" />
     <state width="1358" height="280" key="GridCell.Tab.1.left/0.23.1680.980@0.23.1680.980" timestamp="1580372612008" />
-    <state width="1398" height="445" key="GridCell.Tab.1.right" timestamp="1584775933628">
+    <state width="1398" height="445" key="GridCell.Tab.1.right" timestamp="1584885262206">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="445" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1584775933628" />
+    <state width="1398" height="445" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1584885262206" />
     <state width="1358" height="280" key="GridCell.Tab.1.right/0.23.1680.980@0.23.1680.980" timestamp="1580372612009" />
     <state width="1358" height="309" key="GridCell.Tab.2.bottom" timestamp="1580372417100">
       <screen x="0" y="23" width="1680" height="980" />
