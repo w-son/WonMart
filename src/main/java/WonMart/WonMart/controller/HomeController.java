@@ -24,7 +24,16 @@ public class HomeController {
      */
 
     @RequestMapping("/")
-    public String home() {
+    public String home(Model model) {
+
+        final String kakaoAuth = "https://kauth.kakao.com/oauth/authorize?client_id=46755ba94eb707cd876dbfd1b716ceab&redirect_uri=http://localhost:8080/kakaoLogin&response_type=code";
+        final String naverAuth = "https://nid.naver.com/oauth2.0/authorize?response_type=code&client_id=2cUCbzWwkKNT41u9QWhB&redirect_uri=http://localhost:8080/naverLogin";
+        final String facebookAuth = "https://www.facebook.com/v6.0/dialog/oauth?client_id=888171918306283&redirect_uri=http://localhost:8080/facebookLogin&state={st=state123abc,ds=123456789}";
+
+        model.addAttribute("KakaoAuth", kakaoAuth);
+        model.addAttribute("NaverAuth", naverAuth);
+        model.addAttribute("FacebookAuth", facebookAuth);
+
         return "home";
     }
 

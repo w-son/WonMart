@@ -107,13 +107,13 @@
                                     <a id="googleSignIn">
                                         <img class="icon" src="/img/icon_google.png">
                                     </a>
-                                    <a href="https://kauth.kakao.com/oauth/authorize?client_id=46755ba94eb707cd876dbfd1b716ceab&redirect_uri=http://localhost:8080/kakaoLogin&response_type=code">
+                                    <a th:href="${KakaoAuth}">
                                         <img class="icon" src="/img/icon_kakao.png">
                                     </a>
-                                    <a href="https://nid.naver.com/oauth2.0/authorize?response_type=code&client_id=2cUCbzWwkKNT41u9QWhB&redirect_uri=http://localhost:8080/naverLogin">
+                                    <a th:href="${NaverAuth}">
                                         <img class="icon" src="/img/icon_naver.png">
                                     </a>
-                                    <a href = "https://www.facebook.com/v6.0/dialog/oauth?client_id=888171918306283&redirect_uri=http://localhost:8080/facebookLogin&state={st=state123abc,ds=123456789}";>
+                                    <a th:href="${FacebookAuth}" >
                                         <img class="icon" src="/img/icon_facebook.png">
                                     </a>
                                 </div>
