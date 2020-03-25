@@ -4,6 +4,8 @@ import WonMart.WonMart.controller.form.PostForm;
 import WonMart.WonMart.domain.Post;
 import WonMart.WonMart.domain.PostCategory;
 import WonMart.WonMart.service.PostService;
+import WonMart.WonMart.utility.LetterDescendingTimeSort;
+import WonMart.WonMart.utility.PostDescendingTimeSort;
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.springframework.stereotype.Controller;
@@ -107,6 +109,7 @@ public class PostController { // 게시글 생성, 게시글 조회, 게시글 �
     public String myPosts(Model model, HttpSession session) {
         Long id = (Long) session.getAttribute("member_id");
         List<Post> posts = postService.findByMemberId(id);
+        posts.sort(new PostDescendingTimeSort());
         model.addAttribute("posts", posts);
 
         return "post/myPostList";
@@ -120,6 +123,7 @@ public class PostController { // 게시글 생성, 게시글 조회, 게시글 �
             category = PostCategory.valueOf(filter);
         }
         List<Post> posts = postService.filterPostsByCategory(category);
+        posts.sort(new PostDescendingTimeSort());
         model.addAttribute("posts", posts);
 
         return "post/postList";
@@ -128,6 +132,7 @@ public class PostController { // 게시글 생성, 게시글 조회, 게시글 �
     @GetMapping("/post")
     public String posts(Model model, HttpSession session) {
         List<Post> posts = postService.findPosts();
+        posts.sort(new PostDescendingTimeSort());
         model.addAttribute("posts", posts);
 
         return "post/postList";

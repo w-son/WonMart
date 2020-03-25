@@ -5,8 +5,8 @@ import WonMart.WonMart.domain.Letter;
 import WonMart.WonMart.domain.Member;
 import WonMart.WonMart.service.LetterService;
 import WonMart.WonMart.service.MemberService;
-import WonMart.WonMart.utility.AscendingTimeSort;
-import WonMart.WonMart.utility.DescendingTimeSort;
+import WonMart.WonMart.utility.LetterAscendingTimeSort;
+import WonMart.WonMart.utility.LetterDescendingTimeSort;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -72,7 +72,7 @@ public class LetterController { // 쪽지 생성, 쪽지 조회
         List<Letter> temp = new ArrayList<>();
         temp.addAll(sentByMe);
         temp.addAll(sentByOthers);
-        temp.sort(new AscendingTimeSort());
+        temp.sort(new LetterAscendingTimeSort());
 
         HashMap<String, Letter> map = new HashMap<>();
         for(Letter letter : temp) {
@@ -85,7 +85,7 @@ public class LetterController { // 쪽지 생성, 쪽지 조회
             map.put(other, letter);
         }
         List<Letter> letters = new ArrayList<>(map.values()); // map.keySet() 으로 키값 조회 가능
-        letters.sort(new DescendingTimeSort());
+        letters.sort(new LetterDescendingTimeSort());
 
         model.addAttribute("letters", letters);
 
@@ -109,7 +109,7 @@ public class LetterController { // 쪽지 생성, 쪽지 조회
         List<Letter> letters = new ArrayList<>();
         letters.addAll(sent);
         letters.addAll(received);
-        letters.sort(new AscendingTimeSort());
+        letters.sort(new LetterAscendingTimeSort());
 
         model.addAttribute("receiver_id", receiver.getId());
         model.addAttribute("letters", letters);

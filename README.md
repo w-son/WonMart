@@ -17,6 +17,9 @@
 - Spring Boot 2.1.9 release
 - Spring web mvc, thymeleaf, jpa, h2, lombok
 
+## Demo
+![Demo](./src/main/resources/static/img/WonMartDemo.gif)
+
 ## 테이블 설계
 ![Table](./src/main/resources/static/img/WonMart.png)
 
