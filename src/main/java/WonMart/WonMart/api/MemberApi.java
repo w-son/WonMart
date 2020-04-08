@@ -126,6 +126,10 @@ public class MemberApi { // 조회, 생성, 수정
         = 컬렉션을 IN 쿼리를 통해서 BatchSize만큼 가져와서 조회(LAZY의 경우 프록시 초기화)할 수 있는 것이다
         = 결과적으로 Cross Product 없이 컬렉션을 조회 할 수 있어 데이터의 중복을 방지할 수 있음
         select m from member m where p in (1, 2, 3, 4, 5, 6) <- 이렇게 in절 내에 최대 BatchSize만큼 조회
+
+        -> findAllWithJoinFetchAndPaging을 실행하면 위의 쿼리가 진행되고 in 절 괄호 내에 Post가 조회된다
+           결과적으로는 member의 데이터가 뻥튀기(?) 되지 않은 상태로 조회가 가능하고
+           + in 절로 조회된 Post들은 DTO 초기화 시에 이미 영속성 캐시에 올라온 상태이므로 N + 1 문제가 해결된다
      */
 
     @GetMapping("/api/v2/members")
