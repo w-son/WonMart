@@ -37,7 +37,7 @@ public class MemberRepository {
     }
 
     public List<Member> findAllWithJoinFetchAndPaging(int offset, int limit) {
-        return em.createQuery("select m from Member m" + " join fetch m.posts p", Member.class)
+        return em.createQuery("select m from Member m", Member.class)
                 .setFirstResult(offset)
                 .setMaxResults(limit)
                 .getResultList();

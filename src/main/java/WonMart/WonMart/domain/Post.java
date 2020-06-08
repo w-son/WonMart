@@ -38,7 +38,7 @@ public class Post {
      1) Many관계에 있는 엔티티에 Foreign Key가 존재하고 이 엔티티가 연관관계의 주인이다
      2) LAZY 형태로 fetch하여 N+1문제 해결, 나중에 get함수를 통해서 프록시 객체를 초기화한다
      */
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "member_id")
     private Member member;
 
